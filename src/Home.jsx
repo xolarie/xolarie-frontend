@@ -1,20 +1,10 @@
 import Hero from "./components/Hero"
-import { AboutWrapper,  ServicesWrapper, SolutionsWrapper, ResourcesWrapper, ContactWrapper } from "./components"
 
 
 const Home = () => {
   return (
-    <div>
+    <div className="z-10">
         <Hero />
-        <div className="bg-primary1">
-        <AboutWrapper />
-        <ServicesWrapper />
-        <SolutionsWrapper />
-        <ResourcesWrapper />
-        <div>
-        <ContactWrapper />
-        </div>
-        </div>
     </div>
   )
 }
