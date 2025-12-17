@@ -1,4 +1,5 @@
 import logo from "/images/Logo.png";
+import getStarted from "/images/get_started_button.png"
 import { navDatas } from "../constants";
 import { IoIosArrowDown } from "react-icons/io";
 import { useState } from "react";
@@ -12,18 +13,18 @@ const Header = () => {
   };
 
   return (
-    <div className="z-50 w-[100vw] h-16 px-24 flex flex-row items-center fixed md:px-2 ">
+    <div className="z-50 w-[100vw] h-16 px-24 py-10 flex flex-row items-center fixed md:px-2 lg:px-10 xl:px-14 2xl:px-24">
       <div>
         <Link to="/">
-        <img src={logo} alt="Logo" className="h-16 md:h-10" />
+        <img src={logo} alt="Logo" className="h-16 md:h-6" />
         </Link>
       </div>
-      <nav>
-        <ul className="flex justify-center items-center relative md:ml-10 lg:ml-[10vw] xl:ml-[20vw]">
+      <nav className="flex flex-row w-full">
+        <ul className="flex justify-center items-center relative mr-auto w-full md:ml-10 lg:ml-[10vw] xl:ml-[20vw]">
           {navDatas.map((item, index) => (
             <li
               key={index}
-              className="relative flex text-blue-300 mr-8 items-center cursor-pointer md:text-[12px] whitespace-nowrap lg:text-[14px] lg:mr-14 xl:text-[18px]"
+              className="relative flex mr-8 items-center cursor-pointer md:text-[12px] whitespace-nowrap lg:text-[14px] lg:mr-14 xl:text-[18px]"
               onMouseEnter={() => toggleDropDown(index)}
             >
               
@@ -47,7 +48,9 @@ const Header = () => {
               )}
             </li>
           ))}
+          
         </ul>
+        <button><img src={getStarted} alt="get started"  /></button>
       </nav>
     </div>
   );

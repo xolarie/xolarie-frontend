@@ -1,8 +1,8 @@
 import logo from "/images/Logo.png";
-import contactUs from "/images/Contact.png"
+import getStartedButton from "/images/get_started_button.png"
+import mobileBar from "/images/mobile-navbar.png"
 import { useState, useEffect, useRef } from "react";
 import { IoIosArrowDown } from "react-icons/io";
-import { FaBars } from "react-icons/fa";
 import { MdOutlineClose } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { navDatas } from "../constants";
@@ -34,15 +34,15 @@ const MobileHeader = () => {
 
   return (
     <>
-    <div className = "h-[80px] w-[100vw] bg-[#00A8BE] px-1 content-center justify-center flex flex-row overflow-x-hidden">
+    <div className = "h-[80px] w-[100vw] px-1 content-center justify-center flex flex-row overflow-x-hidden pt-5">
         <Link to="/">
-        <img src={logo} alt="xolarie logo" className="h-14 mr-auto"  />
+        <img src={logo} alt="xolarie logo" className="h-[25px] w-[76px] mr-auto"  />
         </Link>
-        <div className="flex flex-row ml-auto mt-4 mr-3">
-            <img src={contactUs} alt="contact us" className="h-8 mr-4" />
+        <div className="flex flex-row ml-auto mr-3">
+            <img src={getStartedButton} alt="Get Started" className="h-8 mr-4 hidden" />
             <div className="h-8 bg-white px-3  pt-1 rounded-md justify-center ">
                 <button onClick={toggleNavBar}>
-                {navBarOpen ? <MdOutlineClose className=" font-bold text-2xl text-[#3D1B60]" /> : <FaBars className="font-bold text-2xl text-[#3D1B60]" /> }
+                {navBarOpen ? <MdOutlineClose className=" h-[44px] w-[44px] rounded-xl text-2xl text-white bg-gradient-to-br from-[#3D7AFF] via-[#A219EA] to-[#E1017E] " /> : <img src={mobileBar} /> }
                 </button>
             </div>
         </div>
