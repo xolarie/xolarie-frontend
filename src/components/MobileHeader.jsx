@@ -34,15 +34,15 @@ const MobileHeader = () => {
 
   return (
     <>
-    <div className = "h-[80px] w-[100vw] px-1 content-center justify-center flex flex-row overflow-x-hidden pt-5">
+    <div className = "h-[50px] w-[100vw] px-4 content-center justify-center flex flex-row overflow-x-hidden pt-5">
         <Link to="/">
-        <img src={logo} alt="xolarie logo" className="h-[25px] w-[76px] mr-auto"  />
+        <img src={logo} alt="xolarie logo" className="h-[24px] w-[76px] mr-auto"  />
         </Link>
         <div className="flex flex-row ml-auto mr-3">
             <img src={getStartedButton} alt="Get Started" className="h-8 mr-4 hidden" />
             <div className="h-8 bg-white px-3  pt-1 rounded-md justify-center ">
                 <button onClick={toggleNavBar}>
-                {navBarOpen ? <MdOutlineClose className=" h-[44px] w-[44px] rounded-xl text-2xl text-white bg-gradient-to-br from-[#3D7AFF] via-[#A219EA] to-[#E1017E] " /> : <img src={mobileBar} /> }
+                {navBarOpen ? <MdOutlineClose className=" h-[28px] w-[28px] rounded-xl text-2xl text-white bg-gradient-to-br from-[#3D7AFF] via-[#A219EA] to-[#E1017E] " /> : <img className="h-[28px]" src={mobileBar} /> }
                 </button>
             </div>
         </div>
