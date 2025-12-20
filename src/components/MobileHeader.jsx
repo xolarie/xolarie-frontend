@@ -34,7 +34,7 @@ const MobileHeader = () => {
 
   return (
     <>
-    <div className = "h-[50px] w-[100vw] px-4 content-center justify-center flex flex-row overflow-x-hidden pt-5">
+    <div className = "h-[60px] w-[100vw] px-4 content-center justify-center flex flex-row overflow-x-hidden pt-5">
         <Link to="/">
         <img src={logo} alt="xolarie logo" className="h-[24px] w-[76px] mr-auto"  />
         </Link>
@@ -42,12 +42,12 @@ const MobileHeader = () => {
             <img src={getStartedButton} alt="Get Started" className="h-8 mr-4 hidden" />
             <div className="h-8 bg-white px-3  pt-1 rounded-md justify-center ">
                 <button onClick={toggleNavBar}>
-                {navBarOpen ? <MdOutlineClose className=" h-[28px] w-[28px] rounded-xl text-2xl text-white bg-gradient-to-br from-[#3D7AFF] via-[#A219EA] to-[#E1017E] " /> : <img className="h-[28px]" src={mobileBar} /> }
+                {navBarOpen ? <MdOutlineClose className=" h-[32px] w-[32px] rounded-xl text-2xl text-white bg-gradient-to-br from-[#3D7AFF] via-[#A219EA] to-[#E1017E] " /> : <img className="h-[32px]" src={mobileBar} /> }
                 </button>
             </div>
         </div>
     </div>
-    <ul ref={navRef} className="flex flex-col w-[60vw]  absolute right-0 z-10 border pl-4 divide-y bg-[#00A8BE] ">
+    <ul ref={navRef} className="flex flex-col w-[60vw]  absolute right-0 z-10 pl-4 divide-y bg-[#00A8BE] ">
     {
         navBarOpen && (
             navDatas.map((data, index) => (
