@@ -52,36 +52,39 @@ const Hero = () => {
           </p>
         </div>
         <div className=" space-x-6 mt-5">
-          <button className="bg-gradient-to-r from-[#225BFB] to-[#931DFA] p-3 rounded-2xl text-white">
+          <button className="bg-gradient-to-r from-[#225BFB] to-[#931DFA] p-2 rounded-2xl text-white">
             Start Projects
           </button>
-          <button className="border-black border-[0.5px] p-3 rounded-2xl">
+          <button className="border-black border-[0.5px] p-2 rounded-2xl">
             View Our Projects
           </button>
         </div>
         <div className="flex flex-row text-center space-x-4 mt-4 font-inter">
           <div>
-            <h3 className="text-[30px] text-[#553FFB]">98%</h3>
+            <h3 className="text-[20px] text-[#553FFB]">98%</h3>
             <p className="text-[10px]">Client Satisfaction</p>
           </div>
           <div>
-            <h3 className="text-[30px] text-[#553FFB]">24/7</h3>
+            <h3 className="text-[20px] text-[#553FFB]">24/7</h3>
             <p className="text-[10px]">Support Available</p>
           </div>
         </div>
         <div>
-          <p className="text-center mt-2">
+          <p className="text-center mt-2 text-[10px]">
             Trusted by startups, creators and emerging businesses worldwide
           </p>
         </div>
-        <div>
-          <ul className="grid grid-cols-3  place-items-center">
+        <div className="h-44 py-3 w-full">
+          <ul className="flex flex-wrap justify-center gap-3 place-items-center w-full">
           {HeroServices.map((item, i) => (
-            <li key={i} className="flex items-center whitespace-nowrap">
-              <item.icon /><span className="text-[10px]">{item.name}</span>
+            <li key={i} className="flex items-center rounded-3xl border border-[#707070] p-3">
+              <item.icon    size={14} className="text-white rounded-full bg-gradient-to-b from-[#2C55FB] to-[#8C21FA]" /><span className="text-[7px] ml-2">{item.name}</span>
             </li>
           ))}
           </ul>
+        </div>
+        <div>
+          <h1>Scroll to explore</h1>
         </div>
       </div>
     </>
