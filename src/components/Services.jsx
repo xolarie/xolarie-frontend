@@ -1,6 +1,6 @@
 
 import { SectionWrapper } from "../hoc";
-import { FaBolt } from "react-icons/fa6";
+import { FaArrowRight, FaBolt } from "react-icons/fa6";
 import { servicesData } from "../constants"
 import { Link } from "react-router-dom";
 
@@ -26,7 +26,7 @@ const Services = () => {
         <div>
           <ul className="flex flex-col gap-5">
             {servicesData.map((service, i) => (
-              <li key={i} className="h-[180px] border rounded-xl shadow-2xl shadow-[#48484826] p-4">
+              <li key={i} className="h-[200px] border rounded-xl shadow-2xl shadow-[#48484826] p-4">
                 <service.icon className={`text-4xl text-white p-1 rounded-lg font-light`}   style={{ backgroundColor: service.color }}/>
                 <h1 className="font-semibold my-2">{service.title}</h1>
                 <p className="text-[12px] text-[#4F4F4F]">{service.description}</p>
@@ -34,6 +34,12 @@ const Services = () => {
               </li>
             ))}
           </ul>
+        </div>
+        <div className="text-center items-center flex flex-col my-10">
+          <h1>Need a custom solution? we are here to help.</h1>
+          <button className="bg-gradient-to-r from-[#225BFB] to-[#931DFA] p-3 text-white rounded-xl items-center justify-center flex flex-row my-3">
+            <p>Discuss your Project </p>
+            <FaArrowRight /></button>
         </div>
     </div>
     </>
