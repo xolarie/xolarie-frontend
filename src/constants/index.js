@@ -45,47 +45,62 @@ const navDatas = [
 
 ];
 
+import { TbWorld } from "react-icons/tb";
+import { GrAppleAppStore } from "react-icons/gr";
+import { TfiGallery } from "react-icons/tfi";
+import { PiRobotDuotone } from "react-icons/pi";
+import { GrGamepad } from "react-icons/gr";
+import { FaCode } from "react-icons/fa6";
+// import { MdAnimation } from "react-icons/md";
+// import { MdOutlineManageHistory } from "react-icons/md";
+
 const servicesData = [
-    {
-        title: "Web Development",
-        description: "Build responsive, fast, and secure websites with modern technologies.",
-        icon: "/images/web.png",
+        {
+        title: "App Development",
+        description: "Create seamless native and cross-platform mobile experiences that users love on IOS and Android.",
+        icon: GrAppleAppStore,
+        color: "#FF048F",
     },
     {
-        title: "App Development",
-        description: "Create powerful and intuitive mobile applications for both iOS and Android.",
-        icon: "/images/app.png",
+        title: "Web Development",
+        description: "Build fast, scalable, and responsive web applications using cutting-edge technologies.",
+        icon: TbWorld,
+        color: "#2758FB",
+    },
+        {
+        title: "UI/UX Design",
+        description: "Design beautiful, intuitive interfaces with user centered experiences that drive engagement and conversions.",
+        icon: TfiGallery,
+        color: "#FF048F",
+    },
+       {
+        title: "AI & Automation",
+        description: "Leverage artificial intelligence and smart automation to streamline workflows and unlock newpossibilities.",
+        icon: PiRobotDuotone,
+        color: "#8B22FA",
+    },
+        {
+        title: "Gaming",
+        description: "Craft immersive gaming experiences with stunning  graphics, smooth gameplay, and engaging mechanics.",
+        icon: GrGamepad,
+        color: "#2758FB",
     },
     {
         title: "Backend & Database Management",
-        description: "Optimize and manage your databases for performance, security, and scalability.",
-        icon: "/images/backend.png",
+        description: "Develop robust, secure, and scalable server infrastructure to power your digital products reliably.",
+        icon: FaCode,
+        color: "#8B22FA",
     },
-    {
-        title: "UI/UX Design",
-        description: "Enhance user experience through beautifully crafted designs that ensure usability and aesthetic appeal.",
-        icon: "/images/uiux.png",
-    },
-    {
-        title: "Gaming",
-        description: "Develop captivating gaming experiences with cutting-edge game development technology.",
-        icon: "/images/game.png",
-    },
-    {
-        title: "Animation",
-        description: "Bring your ideas to life with creative and impactful animations.",
-        icon: "/images/animation.png",
-    },
-    {
-        title: "Robotics & AI Solutions",
-        description: "Harness the power of AI and robotics to automate processes and create innovative solutions.",
-        icon: "/images/ai.png",
-    },
-    {
-        title: "Project Management",
-        description: "Efficiently manage projects from concept to completion with our expert guidance and tools.",
-        icon: "/images/projectsmgt.png",
-    },
+    // {
+    //     title: "Animation",
+    //     description: "Bring your ideas to life with creative and impactful animations.",
+    //     icon: MdAnimation,
+    // },
+    // {
+    //     title: "Project Management",
+    //     description: "Efficiently manage projects from concept to completion with our expert guidance and tools.",
+    //     icon: MdOutlineManageHistory,
+    // },
 ]
 
 const SolutionsData = [

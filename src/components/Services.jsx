@@ -1,58 +1,41 @@
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
-import { motion } from "framer-motion";
-import { servicesData } from "../constants";
+
 import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
+import { FaBolt } from "react-icons/fa6";
+import { servicesData } from "../constants"
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <h1 className="font-orbitron font-extrabold text-4xl">Our Services</h1>
-        <p className="font-inter mt-5">
-          Explore our comprehensive range of services, tailored to meet your
-          unique needs.
-        </p>
-      </motion.div>
-      <div className="mt-20 flex flex-col">
-        <VerticalTimeline>
-          {servicesData.map((service, index) => (
-            <VerticalTimelineElement
-            className="transition-transform transform group hover:scale-105 duration-300"
-              key={index}
-              contentArrowStyle={{ borderRight: "7px solid rgb(33, 150, 243)" }}
-              position={index % 2 === 0 ? "left" : "right"} // ✅ Alternate positioning
-              contentStyle={{
-                background: "#19042D",
-                color: "#fff",
-                cursor: "pointer",
-              }}
-              icon={
-                <img
-                  src={service.icon}
-                  alt={service.title}
-                  className="cursor-pointer h-10 w-10 rounded-xl object-contain"
-                />
-              }
-              iconStyle={{
-                background: "#19042D",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
-              <div className="transition-transform transform group hover:scale-105 duration-300">
-                <h3 className="text-xl font-bold">{service.title}</h3>
-                <p className=" text-tertiary2">{service.description}</p>
-              </div>
-            </VerticalTimelineElement>
-          ))}
-        </VerticalTimeline>
-      </div>
+    <div>
+        <div className="text-[8px] rounded-3xl bg-[#F0F6FF] border-[#155DFC] border-[0.5px] font-inter px-8 py-2 flex flex-row justify-center gap-3 items-center">
+          <FaBolt  className="text-[20px] text-[#155DFC] " />
+          <p className="font-light text-[12px]"> Our Sevices</p>
+        </div>
+        <div className="text-center">
+          <h1 className="font-inter text-center text-[24px] mt-4">
+            Everything you need to build {" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079]">
+              digital excellence
+            </span>
+          </h1>
+          <p className="text-[11px] text-[#4F4F4F] py-3">
+            From concept to launch, we deliver comprehensive solutions that transform your ideas into powerful digital products
+          </p>
+        </div>
+        <div>
+          <ul className="flex flex-col gap-5">
+            {servicesData.map((service, i) => (
+              <li key={i} className="h-[180px] border rounded-xl shadow-2xl shadow-[#48484826] p-4">
+                <service.icon className={`text-4xl text-white p-1 rounded-lg font-light`}   style={{ backgroundColor: service.color }}/>
+                <h1 className="font-semibold my-2">{service.title}</h1>
+                <p className="text-[12px] text-[#4F4F4F]">{service.description}</p>
+                <Link to="/" className="text-sm text-[#2758FB]">learn more...</Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+    </div>
     </>
   );
 };
