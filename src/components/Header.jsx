@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   return (
-    <div className="z-50 w-[100vw] h-16 px-24 py-10 flex flex-row items-center fixed md:px-2 lg:px-10 xl:px-14 2xl:px-24">
+    <div className="z-50 w-[100vw] h-16 px-24 py-10 flex flex-row items-center fixed md:px-2 lg:px-10 xl:px-14 2xl:px-24 bg-white">
       <div>
         <Link to="/">
         <img src={logo} alt="Logo" className="h-16 md:h-6" />

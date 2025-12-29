@@ -34,7 +34,7 @@ const MobileHeader = () => {
 
   return (
     <>
-    <div className = "h-[60px] w-[100vw] px-4 content-center justify-center flex flex-row overflow-x-hidden pt-5">
+    <div className = "h-[60px] w-[100vw] px-4 content-center justify-center flex flex-row overflow-x-hidden pt-5 fixed">
         <Link to="/">
         <img src={logo} alt="xolarie logo" className="h-[24px] w-[76px] mr-auto"  />
         </Link>

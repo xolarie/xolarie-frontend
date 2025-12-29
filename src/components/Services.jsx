@@ -7,8 +7,8 @@ import { Link } from "react-router-dom";
 const Services = () => {
   return (
     <>
-    <div>
-        <div className="text-[8px] rounded-3xl bg-[#F0F6FF] border-[#155DFC] border-[0.5px] font-inter px-8 py-2 flex flex-row justify-center gap-3 items-center">
+    <div className="flex flex-col items-center">
+        <div className="w-[50vw] text-[8px] rounded-3xl bg-[#F0F6FF] border-[#155DFC] border-[0.5px] font-inter px-8 py-2 flex flex-row justify-center gap-3 items-center">
           <FaBolt  className="text-[20px] text-[#155DFC] " />
           <p className="font-light text-[12px]"> Our Sevices</p>
         </div>
@@ -37,7 +37,7 @@ const Services = () => {
         </div>
         <div className="text-center items-center flex flex-col my-10">
           <h1>Need a custom solution? we are here to help.</h1>
-          <button className="bg-gradient-to-r from-[#225BFB] to-[#931DFA] p-3 text-white rounded-xl items-center justify-center flex flex-row my-3">
+          <button className="bg-gradient-to-r from-[#225BFB] to-[#931DFA] p-3 text-white rounded-xl items-center justify-center flex flex-row my-3 gap-2">
             <p>Discuss your Project </p>
             <FaArrowRight /></button>
         </div>
