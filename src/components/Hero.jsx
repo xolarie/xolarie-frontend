@@ -6,6 +6,7 @@ import { IoGameControllerOutline } from "react-icons/io5";
 import { FaStar } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
+import HeroAnimation from "./HeroAnimation";
 
 const HeroServices = [
   {
@@ -82,8 +83,8 @@ const Hero = () => {
               </p>
             </div>
           </div>
-          <div className="w-[40vw]">
-            <h1>side animation</h1>
+          <div className="w-[40vw] hidden md:block">
+            <HeroAnimation />
           </div>
         </div>
         <div className=" pt-3 w-full md:w-[50vw]">
@@ -103,7 +104,7 @@ const Hero = () => {
           </ul>
         </div>
         <div className="mt-auto justify-center flex flex-col items-center py-4 md:w-full">
-          <h1 className="text-[#A1A1A1]">Scroll to explore</h1>
+          <h1 className="text-[#A1A1A1] md:text-[12px] md:mt-8">Scroll to explore</h1>
           <FaAngleDown className="text-[#676767]" />
         </div>
         <div></div>
