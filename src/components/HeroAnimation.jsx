@@ -4,11 +4,6 @@ import gsap from "gsap";
 import frame from "/images/Frame.png";
 import frame2 from "/images/Frame-2.png";
 import frameGroup from "/images/Group.png"
-// import frameAi from "/images/Frame-ai.png";
-// import frameApp from "/images/Frame-app.png";
-// import frameUi from "/images/Frame-ui.png";
-// import frameWeb from "/images/Frame-web.png";
-// import frameGame from "/images/Frame-game.png"
 
 const HeroAnimation = () => {
   const itemsRef = useRef([]);
@@ -34,7 +29,7 @@ const HeroAnimation = () => {
       <img
         ref={(el) => (itemsRef.current[1] = el)}
         src={frame2}
-        className="absolute top-[10px] right-[-60px] w-20 rounded-xl will-change-transform lg:right-[-100px]  lg:w-24 xl:right-[-150px] xl:w-32 2xl:right-[-200px]"
+        className="absolute top-[10px] right-[-60px] w-20 rounded-xl will-change-transform lg:right-[-100px]  lg:w-24 xl:right-[-150px] xl:w-32 2xl:right-[-80px]"
         alt=""
       />
 
@@ -43,7 +38,7 @@ const HeroAnimation = () => {
         <img
           ref={(el) => (itemsRef.current[2] = el)}
           src={frameGroup}
-          className="absolute bottom-28 right-[-30px] w-60 z-50 rounded-xl will-change-transform lg:w-68 lg:bottom-20 xl:right-12 xl:w-76 2xl:w-60"
+          className="absolute bottom-28 right-[-30px] w-60 rounded-xl will-change-transform lg:w-68 lg:bottom-20 xl:right-12 xl:w-76 2xl:w-60"
           alt=""
         />
       

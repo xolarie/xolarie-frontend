@@ -63,7 +63,7 @@ const servicesData = [
     },
     {
         title: "Web Development",
-        description: "Build fast, scalable, and responsive web applications using cutting-edge technologies.",
+        description: "Build fast, scalable, secure, futuristic and responsive web applications using cutting-edge technonologies.",
         icon: TbWorld,
         color: "#2758FB",
     },
@@ -86,7 +86,7 @@ const servicesData = [
         color: "#2758FB",
     },
     {
-        title: "Backend & Database Management",
+        title: "Backend Systems",
         description: "Develop robust, secure, and scalable server infrastructure to power your digital products reliably.",
         icon: FaCode,
         color: "#8B22FA",

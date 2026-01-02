@@ -6,6 +6,7 @@ import { IoGameControllerOutline } from "react-icons/io5";
 import { FaStar } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
+import {SectionWrapper } from "../hoc"
 import HeroAnimation from "./HeroAnimation";
 
 const HeroServices = [
@@ -34,7 +35,7 @@ const HeroServices = [
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-col items-center w-full py-4 md:items-start">
+      <div className="flex flex-col items-center w-full py-4 md:items-start md:pb-0">
         <div className="text-[8px] rounded-3xl bg-[#F0F6FF] border-[#155DFC] border-[0.5px] font-inter p-3 flex flex-row justify-center gap-3 items-center md:p-1 md:my-6">
           <FaStar className="text-[20px] text-[#155DFC] " />
           <p> INNOVATION-DRIVEN DIGITAL STUDIO</p>
@@ -95,10 +96,10 @@ const Hero = () => {
                 className="flex items-center rounded-3xl border border-[#707070] p-3"
               >
                 <item.icon
-                  size={10}
-                  className="text-white rounded-full bg-gradient-to-b from-[#2C55FB] to-[#8C21FA]"
+                  // size={10}
+                  className="text-white rounded-full bg-gradient-to-b from-[#2C55FB] to-[#8C21FA] xl:w-[20px] xl:h-[20px]"
                 />
-                <span className="text-[7px] ml-2">{item.name}</span>
+                <span className="text-[7px] ml-2 lg:text-[10px] xl:text-[12px]">{item.name}</span>
               </li>
             ))}
           </ul>
@@ -113,4 +114,6 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+const HeroWrapper = SectionWrapper(Hero, "hero")
+
+export { HeroWrapper };
