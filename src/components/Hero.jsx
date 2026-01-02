@@ -43,14 +43,14 @@ const Hero = () => {
         <div className="flex flex-col items-center md:flex-row">
           <div className="flex flex-col items-center md:items-start md:w-[40vw] md:mr-5">
             <div>
-              <h1 className="font-inter text-center text-[32px] mt-4 md:text-start">
+              <h1 className="font-inter text-center text-[32px] mt-4 md:text-start xl:text-5xl 2xl:text-6xl">
                 Building powerful{" "}
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079]">
                   digital products{" "}
                 </span>{" "}
                 that help brands grow
               </h1>
-              <p className="text-center font-iner text-[#4F4F4F] text-[12px] md:text-start md:text-[10px]">
+              <p className="text-center font-iner text-[#4F4F4F] text-[12px] md:text-start md:text-[10px] xl:text-[17px] lg:my-5">
                 Xolarie creates scalable software, intuitive user experiences
                 and smart technology solutions that drive meaningful results for
                 your business.
