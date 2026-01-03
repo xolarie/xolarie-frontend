@@ -57,12 +57,12 @@ const Hero = () => {
               </p>
             </div>
             <div className=" space-x-6 mt-5 flex md:items-start">
-              <button className="bg-gradient-to-r from-[#225BFB] to-[#931DFA] p-2 rounded-2xl text-white flex flex-row items-center gap-2 w-32 md:rounded-lg">
-                <p className="text-[12px]">Start Projects </p>
+              <button className="bg-gradient-to-r from-[#225BFB] to-[#931DFA] p-2 rounded-2xl text-white flex flex-row items-center gap-2 w-32 md:rounded-lg md:h-12">
+                <p className="text-[12px] md:text-[14px]">Start Projects </p>
                 <FaArrowRight />
               </button>
-              <button className="border-black border-[0.5px] p-2 rounded-2xl flex flex-row items-center gap-2 md:rounded-lg">
-                <p className="text-[12px]">View Our Projects</p>
+              <button className="border-black border-[0.5px] p-2 rounded-2xl flex flex-row items-center gap-2 md:rounded-lg md:h-12">
+                <p className="text-[12px] md:text-[14px]">View Our Projects</p>
                 <FaArrowRight />
               </button>
             </div>
