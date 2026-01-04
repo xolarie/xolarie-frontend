@@ -21,11 +21,7 @@ const navDatas = [
             {page: "Enterprise System Integration", path: "/solutions/enterprise"}
         ]
     },
-        {page: "Products", path: "/products"
-        // dropdown: [
-        //     {page: "Explore our products", path: "/products/explore"},
-        // ]
-    },
+
     {page: "Insights",
         dropdown: [
             {page: "Blog", path: "/insights/blog"},
@@ -35,14 +31,6 @@ const navDatas = [
             // {page: "API Documentation", path: "/resources/api-documentation"}
         ]
     },
-        {page: "Lab", path: "/lab",
-        // dropdown: [
-        //     {page: "Jobs Openings", path: "/careers/job-opening"},
-        //     {page: "Internship", path: "/careers/internship"},
-        //     {page: "Recruitment Event", path: "/careers/recruitment"},
-        //     {page: "FAQs", path: "/careers/faqs"}
-        // ]
-    },
     {page: "Careers",
         dropdown: [
             {page: "Jobs Openings", path: "/careers/job-opening"},
@@ -50,6 +38,19 @@ const navDatas = [
             {page: "Recruitment Event", path: "/careers/recruitment"},
             {page: "FAQs", path: "/careers/faqs"}
         ]
+    },
+            {page: "Products", path: "/products"
+        // dropdown: [
+        //     {page: "Explore our products", path: "/products/explore"},
+        // ]
+    },
+            {page: "Lab", path: "/lab",
+        // dropdown: [
+        //     {page: "Jobs Openings", path: "/careers/job-opening"},
+        //     {page: "Internship", path: "/careers/internship"},
+        //     {page: "Recruitment Event", path: "/careers/recruitment"},
+        //     {page: "FAQs", path: "/careers/faqs"}
+        // ]
     },
     // {page: "Hardware & Gadgets", path: "/solutions/hardware"},
 
