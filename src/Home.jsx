@@ -1,4 +1,5 @@
 import {HeroWrapper } from "./components/Hero"
+import { ProcessWrapper } from "./components/Process"
 import { ServicesWrapper } from "./components/Services"
 import { TrustedCompWrapper } from "./components/TrustedComp"
 
@@ -9,6 +10,7 @@ const Home = () => {
         <HeroWrapper />
         <ServicesWrapper />
         <TrustedCompWrapper />
+        <ProcessWrapper />
     </div>
   )
 }
