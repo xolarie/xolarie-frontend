@@ -1,8 +1,5 @@
 const navDatas = [
-    {page: "About Us", 
-        dropdown : [
-        {page: "About Us", path: "/about"}
-        ]
+    {page: "About Us",  path: "/about"
     },
     {page: "Services",
         dropdown: [
@@ -24,14 +21,27 @@ const navDatas = [
             {page: "Enterprise System Integration", path: "/solutions/enterprise"}
         ]
     },
-    {page: "Resources",
+        {page: "Products", path: "/products"
+        // dropdown: [
+        //     {page: "Explore our products", path: "/products/explore"},
+        // ]
+    },
+    {page: "Insights",
         dropdown: [
-            {page: "Blog", path: "/resources/blog"},
-            {page: "Tech News & Updates", path: "/resources/tech-news"},
+            {page: "Blog", path: "/insights/blog"},
+            {page: "Tech News & Updates", path: "/insights/tech-news"},
             // {page: "Open Source Projects", path: "/resources/projects"},
             // {page: "Documentation", path: "/resources/documentation"},
             // {page: "API Documentation", path: "/resources/api-documentation"}
         ]
+    },
+        {page: "Lab", path: "/lab",
+        // dropdown: [
+        //     {page: "Jobs Openings", path: "/careers/job-opening"},
+        //     {page: "Internship", path: "/careers/internship"},
+        //     {page: "Recruitment Event", path: "/careers/recruitment"},
+        //     {page: "FAQs", path: "/careers/faqs"}
+        // ]
     },
     {page: "Careers",
         dropdown: [
