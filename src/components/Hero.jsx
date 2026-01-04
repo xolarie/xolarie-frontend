@@ -76,6 +76,7 @@ const Hero = () => {
                 className="font-inter text-center text-[32px] mt-4 md:text-start xl:text-5xl 2xl:text-6xl"
               >
                 Building powerful{" "}
+                <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079]">
                   digital products
                 </span>{" "}
