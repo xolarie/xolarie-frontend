@@ -19,7 +19,7 @@ const Header = () => {
         </Link>
       </div>
       <nav className="flex flex-row w-full">
-        <ul className="flex justify-center items-center relative mr-auto w-full md:ml-10 lg:ml-[10vw] xl:ml-[20vw]">
+        <ul className="flex justify-center items-center relative mr-auto w-full md:ml-10 lg:ml-[10vw] xl:ml-[10vw]">
           {navDatas.map((item, index) => (
             <li
               key={index}
