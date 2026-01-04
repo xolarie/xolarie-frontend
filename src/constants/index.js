@@ -365,4 +365,8 @@ const subProjectMgt = [
     },
 ]
 
-export { navDatas, servicesData, SolutionsData, teamMembers, subWeb, subApp, subBackend, subUiux, subGame, subAnimation, subRobotics, subProjectMgt };
+const trustedCompany = [
+    "TechCorp", "StartupX", "InnovationLab", "DigitalFlow", "Cloudsync",  "Datawave"
+]
+
+export { navDatas, servicesData, SolutionsData, teamMembers, subWeb, subApp, subBackend, subUiux, subGame, subAnimation, subRobotics, subProjectMgt, trustedCompany };

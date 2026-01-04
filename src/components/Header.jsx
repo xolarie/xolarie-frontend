@@ -24,17 +24,17 @@ const Header = () => {
             <li
               key={index}
               className="
-    relative flex mr-8 items-center cursor-pointer font-semibold
-    transition-colors duration-300 ease-in-out
-    hover:text-[#3D7AFF]
-    md:text-[10px] whitespace-nowrap
-    lg:text-[12px] lg:mr-14 xl:text-[14px] 2xl:text-[16px]
-    after:content-['']
-    after:absolute after:left-0 after:-bottom-1
-    after:w-0 after:h-[2px] after:bg-[#3D7AFF]
-    after:transition-all after:duration-300 after:ease-in-out
-    hover:after:w-full
-  "
+                  relative flex mr-8 items-center cursor-pointer font-semibold
+                  transition-colors duration-300 ease-in-out
+                  hover:text-[#3D7AFF]
+                  md:text-[10px] whitespace-nowrap
+                  lg:text-[12px] lg:mr-14 xl:text-[14px] 2xl:text-[16px]
+                  after:content-['']
+                  after:absolute after:left-0 after:-bottom-1
+                  after:w-0 after:h-[2px] after:bg-[#3D7AFF]
+                  after:transition-all after:duration-300 after:ease-in-out
+                  hover:after:w-full
+                "
               onMouseEnter={() => toggleDropDown(index)}
               onClick={() => toggleDropDown(index)}
             >
@@ -46,27 +46,29 @@ const Header = () => {
               {item.dropdown && (
                 <>
                   {/* <IoIosArrowDown className="ml-2" /> */}
-              {Array.isArray(item.dropdown) && (
-    <ul
-      className={`
+                  {Array.isArray(item.dropdown) && (
+                    <ul
+                      className={`
         absolute top-8 left-0 bg-[#3D7AFF] text-white shadow-lg rounded-lg z-50
         w-[15vw]
         transition-all duration-300 ease-out
-        ${activeDropdown === index
-          ? "opacity-100 translate-y-0 pointer-events-auto"
-          : "opacity-0 -translate-y-2 pointer-events-none"}
+        ${
+          activeDropdown === index
+            ? "opacity-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 -translate-y-2 pointer-events-none"
+        }
       `}
-    >
-      {item.dropdown.map((subItem, subIndex) => (
-        <li
-          key={subIndex}
-          className="p-2 text-black hover:text-white"
-        >
-          <Link to={subItem.path}>{subItem.page}</Link>
-        </li>
-      ))}
-    </ul>
-  )}
+                    >
+                      {item.dropdown.map((subItem, subIndex) => (
+                        <li
+                          key={subIndex}
+                          className="p-2 text-black hover:text-white"
+                        >
+                          <Link to={subItem.path}>{subItem.page}</Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </>
               )}
             </li>

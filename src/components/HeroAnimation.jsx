@@ -29,7 +29,7 @@ const HeroAnimation = () => {
       <img
         ref={(el) => (itemsRef.current[1] = el)}
         src={frame2}
-        className="absolute top-[10px] right-[-60px] w-20 rounded-xl will-change-transform lg:right-[-100px]  lg:w-24 xl:right-[-150px] xl:w-32 2xl:right-[-80px]"
+        className="absolute top-[10px] right-[-60px] w-20 rounded-xl will-change-transform lg:right-[-100px]  lg:w-24 xl:right-[-150px] xl:w-32 2xl:right-[-80px] 2xl:scale-125"
         alt=""
       />
 

@@ -26,11 +26,12 @@ const Services = () => {
         <div className="flex items-center justify-center md:w-full">
           <ul className="flex flex-col gap-5 md:grid md:grid-cols-3 md:place-items-center md:w-full">
             {servicesData.map((service, i) => (
-              <li key={i} className="h-[200px] flex flex-col border rounded-xl shadow-2xl shadow-[#48484826] p-4 hover:scale-105 duration-300 xl:px-6 md:w-auto">
+              <li key={i} className="h-[200px] w-full flex flex-col border rounded-xl shadow-2xl shadow-[#48484826] p-4 hover:scale-105 duration-300 xl:px-6 md:w-auto">
                 <service.icon className={`text-4xl text-white p-1 rounded-lg font-light`}   style={{ backgroundColor: service.color }}/>
                 <h1 className="font-semibold my-2 md:my-5">{service.title}</h1>
                 <p className="text-[12px] text-[#4F4F4F] md:text-[8px] lg:text-[10px] xl:text-[12px]">{service.description}</p>
-                <Link to="/" className="text-sm mt-auto text-[#2758FB] md:text-[8px] xl:text-[10px]">learn more...</Link>
+                <Link to="/" className="text-sm mt-auto text-[#2758FB] md:text-[8px] xl:text-[10px]">learn more</Link>
+                <p className={`font-bold text-right`} style={{ color: service.color }}>...</p>
               </li>
             ))}
           </ul>
