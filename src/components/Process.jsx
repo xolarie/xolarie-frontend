@@ -15,10 +15,10 @@ const Process = () => {
           Vision to life
         </span>{" "}
       </p>
-      <ul className="flex flex-row gap-6 overflow-x-scroll">
+      <ul className="flex flex-row gap-6 overflow-x-auto w-full max-w-full">
         {process.map((item, i) => (
-          <li key={i} className="relative w-[244px] h-[293px] p-4">
-            <h1 className="absolute top-0 right-0 border p-2 px-4 rounded-full shadow-2xl shadow-[#48484826] bg-white">
+          <li key={i} className="relative w-[280px] h-[320px] p-4 flex-shrink-0">
+            <h1 className="absolute top-0 right-0 border  p-2 px-4 rounded-full shadow-2xl shadow-[#48484826] bg-white" style={{ color: item.color }}>
               {i + 1}
             </h1>
             <div className="w-full h-full border rounded-2xl shadow-2xl shadow-[#48484826] p-4">
@@ -26,15 +26,15 @@ const Process = () => {
                 className="text-5xl text-white p-2 rounded-xl"
                 style={{ backgroundColor: item.color }}
               />
-              <h4 className="text-xl font-bold mt-8">{item.step}</h4>
-              <p className="text-[12px] mt-4">{item.description}</p>
+              <h4 className="text-xl font-bold mt-8 h-16">{item.step}</h4>
+              <p className="text-[12px] h-20">{item.description}</p>
               <p
                     style={{ "--c": item.color }}
-  className="
-    text-right font-bold text-2xl
-    bg-[linear-gradient(to_right,var(--c)_0%,var(--c)_80%,transparent_100%)]
-    bg-clip-text text-transparent
-  "
+                        className="
+                          text-right font-bold text-2xl
+                          bg-[linear-gradient(to_right,var(--c)_0%,var(--c)_80%,transparent_100%)]
+                          bg-clip-text text-transparent
+                        "
               >
                 ...
               </p>
