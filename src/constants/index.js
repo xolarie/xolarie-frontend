@@ -60,7 +60,7 @@ import { TbWorld } from "react-icons/tb";
 import { GrAppleAppStore } from "react-icons/gr";
 import { TfiGallery } from "react-icons/tfi";
 import { PiRobotDuotone } from "react-icons/pi";
-import { GrGamepad } from "react-icons/gr";
+import { VscGame } from "react-icons/vsc";
 import { FaCode } from "react-icons/fa6";
 // import { MdAnimation } from "react-icons/md";
 // import { MdOutlineManageHistory } from "react-icons/md";
@@ -93,7 +93,7 @@ const servicesData = [
         {
         title: "Gaming",
         description: "Craft immersive gaming experiences with stunning  graphics, smooth gameplay, and engaging mechanics.",
-        icon: GrGamepad,
+        icon: VscGame,
         color: "#2758FB",
     },
     {
@@ -120,7 +120,7 @@ const trustedCompany = [
 
 import { MdOutlinePhoneCallback } from "react-icons/md";
 import { FaRegLightbulb } from "react-icons/fa";
-import { GoRocket } from "react-icons/go";
+import { RxRocket } from "react-icons/rx";
 import { TiInputChecked } from "react-icons/ti";
 
 const process = [
@@ -146,7 +146,7 @@ const process = [
         step : "Testing & Launch",
         description : "Rigorous testing ensures everything works flawlessly before we launch your product.",
         color : "#A618E3",
-        icon : GoRocket
+        icon : RxRocket
     },
     {
         step : "Support & Growth",

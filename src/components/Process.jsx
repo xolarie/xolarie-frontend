@@ -9,25 +9,28 @@ const Process = () => {
         <img src={bolt} />
         <p>Our Process</p>
       </div>
-      <p className="text-center text-3xl my-10">
-        How we bring your <br />
+      <p className="text-center w-72 text-3xl mt-10 md:w-full">
+        How we bring your  {" "}
         <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#155DFC] via-[#8529F3] to-[#E2017C]">
-          Vision to life
+          vision to life
         </span>{" "}
       </p>
-      <ul className="flex flex-row gap-6 overflow-x-auto w-full max-w-full">
+      <p className="w-[470px] mb-12 mt-4 text-center">A proven 5-step process that transforms ideas into exceptional digital products</p>
+      <ul className="flex flex-row gap-6 overflow-x-auto w-full max-w-full no-scrollbar snap-x snap-mandatory md:pb-10 lg:gap-0 lg:items-center lg:justify-center">
         {process.map((item, i) => (
-          <li key={i} className="relative w-[280px] h-[320px] p-4 flex-shrink-0">
-            <h1 className="absolute top-0 right-0 border  p-2 px-4 rounded-full shadow-2xl shadow-[#48484826] bg-white" style={{ color: item.color }}>
+          <li key={i} className="relative w-[280px] h-[320px] p-4 flex-shrink-0 lg:w-[174px] lg:h-[174px]  xl:w-[210px] xl:h-[200px] 2xl:w-[260px] 2xl:h-[260px]">
+            <h1 className="absolute top-0 right-0 border  p-2 px-4 rounded-full shadow-2xl shadow-[#48484826] bg-white lg:text-[10px]  lg:font-semibold" style={{ color: item.color }}>
               {i + 1}
             </h1>
             <div className="w-full h-full border rounded-2xl shadow-2xl shadow-[#48484826] p-4">
               <item.icon
-                className="text-5xl text-white p-2 rounded-xl"
-                style={{ backgroundColor: item.color }}
+                className="text-5xl text-white p-2 rounded-xl lg:text-2xl lg:rounded-sm lg:p-1 2xl:text-4xl "
+                style={{ backgroundColor: item.color,
+                  boxShadow: `-2px 8px 10px ${item.color}55`,
+                 }}
               />
-              <h4 className="text-xl font-bold mt-8 h-16">{item.step}</h4>
-              <p className="text-[12px] h-20">{item.description}</p>
+              <h4 className="text-xl font-bold mt-8 h-16 lg:text-sm lg:mt-1 lg:font-semibold lg:h-12 xl:text-lg xl:h-14 2xl:mt-4">{item.step}</h4>
+              <p className="text-[12px] h-20 lg:text-[8px] lg:h-8 xl:text-[10px] 2xl:text-[12px] 2xl:h-10">{item.description}</p>
               <p
                     style={{ "--c": item.color }}
                         className="

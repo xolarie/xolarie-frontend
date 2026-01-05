@@ -15,31 +15,31 @@ const TrustedComp = () => {
     });
   };
   return (
-    <div>
-      <div className="grid grid-cols-2 gap-3">
+    <div className="w-full md:flex md:flex-col md:items-center">
+      <div className="grid grid-cols-2 gap-3 md:flex md:items-center md:gap-14 xl:gap-20 2xl:gap-28">
         <div className="flex flex-col items-center">
-          <h1 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079]">
+          <h1 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079] md:text-4xl">
             150+
           </h1>
-          <p className="text-[#4F4F4F]">Projects Delivered</p>
+          <p className="text-[#4F4F4F] md:text-[12px]">Projects Delivered</p>
         </div>
         <div className="flex flex-col items-center">
-          <h1 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079]">
+          <h1 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079]  md:text-4xl">
             98%
           </h1>
-          <p className="text-[#4F4F4F]">Clients Satisfaction</p>
+          <p className="text-[#4F4F4F] md:text-[12px]">Clients Satisfaction</p>
         </div>
         <div className="flex flex-col items-center">
-          <h1 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079]">
+          <h1 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079]  md:text-4xl">
             50+
           </h1>
-          <p className="text-[#4F4F4F]">Happy Clients</p>
+          <p className="text-[#4F4F4F] md:text-[12px]">Happy Clients</p>
         </div>
         <div className="flex flex-col items-center">
-          <h1 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079]">
+          <h1 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079]  md:text-4xl">
             24/7
           </h1>
-          <p className="text-[#4F4F4F]">Supports Available</p>
+          <p className="text-[#4F4F4F] md:text-[12px]">Supports Available</p>
         </div>
       </div>
       <div className="my-16 bg-[radial-gradient(circle_at_center,_#E7EDFE,_#E3C8FF4D,_transparent_60%)]">
@@ -67,10 +67,22 @@ const TrustedComp = () => {
           ></button>
         </div>
         <div className="py-16 items-center flex flex-col">
-          <p className="text-center text-[#4F4F4F] py-7">Xolarie transformed our digital presence with their innovative approach and technical expertise. The results exceeded our expectations.</p>
-          <img src="" className="p-8 bg-gradient-to-r from-[#3352FB] to-[#8F1FFA] rounded-full" alt="" />
-          <h4 className="text-[#4F4F4F] font-bold">Clark Ward</h4>
-          <p className="text-[#4F4F4F] text-[10px]">CEO, Techcorp Inc.</p>
+          <p className="text-center text-[#4F4F4F] py-7 md:w-[520px]">
+            Xolarie transformed our digital presence with their innovative
+            approach and technical expertise. The results exceeded our
+            expectations.
+          </p>
+          <div className="flex flex-col md:flex-row md:justify-center md:items-center md:gap-3">
+            <img
+              src=""
+              className="p-10 bg-gradient-to-r from-[#3352FB] to-[#8F1FFA] rounded-full"
+              alt=""
+            />
+            <div>
+              <h4 className="text-[#4F4F4F] font-bold">Clark Ward</h4>
+              <p className="text-[#4F4F4F] text-[10px]">CEO, Techcorp Inc.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
