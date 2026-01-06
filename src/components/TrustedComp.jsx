@@ -46,7 +46,7 @@ const TrustedComp = () => {
         <h1 className="text-center">TRUSTED BY INDUSTRY LEADERS</h1>
         <ul
           ref={scrollRef}
-          className="flex flex-row overflow-x-scroll gap-8 py-5"
+          className="flex flex-row overflow-x-scroll gap-8 py-5 no-scrollbar"
         >
           {trustedCompany.map((item, i) => (
             <li key={i} className="text-[#757575] border-2 p-2 rounded-2xl">

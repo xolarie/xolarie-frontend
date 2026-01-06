@@ -1,8 +1,8 @@
-import { TbWorld } from "react-icons/tb";
+import { FaGlobe } from "react-icons/fa";
 import { FaAppStoreIos } from "react-icons/fa";
-import { GrGallery } from "react-icons/gr";
-import { FaRobot } from "react-icons/fa";
-import { IoGameControllerOutline } from "react-icons/io5";
+import { TfiGallery } from "react-icons/tfi";
+import { PiRobotDuotone } from "react-icons/pi";
+import { VscGame } from "react-icons/vsc";
 import { FaStar } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
@@ -13,7 +13,7 @@ import HeroAnimation from "./HeroAnimation";
 const HeroServices = [
   {
     name: "Web Development",
-    icon: TbWorld,
+    icon: FaGlobe,
   },
   {
     name: "App Development",
@@ -21,15 +21,15 @@ const HeroServices = [
   },
   {
     name: "UI UX Design",
-    icon: GrGallery,
+    icon: TfiGallery,
   },
   {
     name: "AI & Automation",
-    icon: FaRobot,
+    icon: PiRobotDuotone,
   },
   {
     name: "Geme Development ",
-    icon: IoGameControllerOutline,
+    icon: VscGame,
   },
 ];
 
@@ -143,7 +143,7 @@ const Hero = () => {
               >
                 <item.icon
                   // size={10}
-                  className="text-white rounded-full bg-gradient-to-b from-[#2C55FB] to-[#8C21FA] xl:w-[20px] xl:h-[20px]"
+                  className="text-white p-[2px] rounded-lg bg-gradient-to-b from-[#2C55FB] to-[#8C21FA] xl:w-[20px] xl:h-[20px]"
                 />
                 <span className="text-[7px] ml-2 lg:text-[10px] xl:text-[12px]">
                   {item.name}
