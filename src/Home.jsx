@@ -1,3 +1,4 @@
+import { FeaturedProjectsWrapper } from "./components/FeaturedProjects"
 import {HeroWrapper } from "./components/Hero"
 import { ProcessWrapper } from "./components/Process"
 import { ServicesWrapper } from "./components/Services"
@@ -11,6 +12,7 @@ const Home = () => {
         <ServicesWrapper />
         <TrustedCompWrapper />
         <ProcessWrapper />
+        <FeaturedProjectsWrapper />
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import { SectionWrapper } from "../hoc";
 import bolt from "/images/bolt.png";
 import { process } from "../constants";
+import { FaArrowRight } from "react-icons/fa6";
 
 const Process = () => {
   return (
@@ -15,8 +16,8 @@ const Process = () => {
           vision to life
         </span>{" "}
       </p>
-      <p className="w-[470px] mb-12 mt-4 text-center">A proven 5-step process that transforms ideas into exceptional digital products</p>
-      <ul className="flex flex-row gap-6 overflow-x-auto w-full max-w-full no-scrollbar snap-x snap-mandatory md:pb-10 lg:gap-0 lg:items-center lg:justify-center">
+      <p className="md:w-[470px] mb-12 mt-4 text-center">A proven 5-step process that transforms ideas into exceptional digital products</p>
+      <ul className="flex flex-row mb-6 gap-6 overflow-x-auto w-full max-w-full no-scrollbar snap-x snap-mandatory md:pb-10 lg:gap-0 lg:items-center lg:justify-center">
         {process.map((item, i) => (
           <li key={i} className="relative w-[280px] h-[320px] p-4 flex-shrink-0 lg:w-[174px] lg:h-[174px]  xl:w-[210px] xl:h-[200px] 2xl:w-[260px] 2xl:h-[260px]">
             <h1 className="absolute top-0 right-0 border  p-2 px-4 rounded-full shadow-2xl shadow-[#48484826] bg-white lg:text-[10px]  lg:font-semibold" style={{ color: item.color }}>
@@ -45,6 +46,14 @@ const Process = () => {
           </li>
         ))}
       </ul>
+      <div className="flex flex-col items-center w-[260px] rounded-2xl border-[#0693F7] p-4 bg-gradient-to-r from-[#2658FB0F] via-[#9D1CF10F] to-[#E2017C0F] border-2 h-[260px]">
+        <p className="text-2xl font-bold text-center mb-5">Ready to get started?</p>
+        <p className="text-center mb-8">Let’s discuss how we can help bring your project to life</p>
+        <button className=" bg-gradient-to-r text-white px-6 py-4 rounded-xl from-[#225BFB] to-[#931DFA] flex gap-3 justify-center items-center">
+          <p>Schedule a Call</p>
+          <FaArrowRight />
+        </button>
+      </div>
     </div>
   );
 };

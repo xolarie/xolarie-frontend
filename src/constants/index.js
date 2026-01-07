@@ -156,4 +156,61 @@ const process = [
     },
 ]
 
-export { navDatas, servicesData,  trustedCompany, process };
+const Projects = [
+    {
+        name: "TechFlow Dashboard",
+        description : "A comprehensive analytics platform with real-time data visualization and AI-powered insights for...",
+        stacks : ["React", "Typescript", "Analysis"],
+        services : "Web Development",
+        colorFrom : "#2957FB",
+        colorVia : "#9F1BF0",
+        colorTo : "#DD0385"
+    },
+    {
+        name: "TechFlow Dashboard",
+        description : "A comprehensive analytics platform with real-time data visualization and AI-powered insights for...",
+        stacks : ["React", "Typescript", "Analysis"],
+        services : "Web Development",
+        colorFrom : "#2957FB",
+        colorVia : "#9F1BF0",
+        colorTo : "#DD0385"
+    },
+    {
+        name: "TechFlow Dashboard",
+        description : "A comprehensive analytics platform with real-time data visualization and AI-powered insights for...",
+        stacks : ["React", "Typescript", "Analysis"],
+        services : "Web Development",
+        colorFrom : "#2957FB",
+        colorVia : "#9F1BF0",
+        colorTo : "#DD0385"
+    },
+    {
+        name: "TechFlow Dashboard",
+        description : "A comprehensive analytics platform with real-time data visualization and AI-powered insights for...",
+        stacks : ["React", "Typescript", "Analysis"],
+        services : "Web Development",
+        colorFrom : "#2957FB",
+        colorVia : "#9F1BF0",
+        colorTo : "#DD0385"
+    },
+    {
+        name: "TechFlow Dashboard",
+        description : "A comprehensive analytics platform with real-time data visualization and AI-powered insights for...",
+        stacks : ["React", "Typescript", "Analysis"],
+        services : "Web Development",
+        colorFrom : "#2957FB",
+        colorVia : "#9F1BF0",
+        colorTo : "#DD0385"
+    },
+    {
+        name: "TechFlow Dashboard",
+        description : "A comprehensive analytics platform with real-time data visualization and AI-powered insights for...",
+        stacks : ["React", "Typescript", "Analysis"],
+        services : "Web Development",
+        colorFrom : "#2957FB",
+        colorVia : "#9F1BF0",
+        colorTo : "#DD0385"
+    },
+]
+
+export { navDatas, servicesData,  trustedCompany, process, Projects };
