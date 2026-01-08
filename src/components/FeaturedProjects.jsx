@@ -1,15 +1,178 @@
+import { Link } from "react-router-dom";
+import { useRef, useState, useEffect } from "react";
+import { projects } from "../constants";
 import { SectionWrapper } from "../hoc";
 import work from "/images/work-history.png";
+import { FaArrowRight } from "react-icons/fa6";
 
 const FeaturedProjects = () => {
+
+  
+const scrollRef = useRef(null);
+const itemRefs = useRef([]);
+const intervalRef = useRef(null);
+
+const [activeIndex, setActiveIndex] = useState(0);
+
+const startAutoScroll = () => {
+  if (intervalRef.current) return;
+
+  intervalRef.current = setInterval(() => {
+    setActiveIndex((prev) => {
+      const next = (prev + 1) % projects.length;
+
+      itemRefs.current[next]?.scrollIntoView({
+        behavior: "smooth",
+        inline: "center",
+      });
+
+      return next;
+    });
+  }, 5000);
+};
+
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const index = itemRefs.current.indexOf(entry.target);
+          if (index !== -1) setActiveIndex(index);
+        }
+      });
+    },
+    {
+      root: scrollRef.current,
+      threshold: 0.6,
+    }
+  );
+
+  itemRefs.current.forEach((el) => el && observer.observe(el));
+
+  return () => observer.disconnect();
+}, []);
+
+
+const stopAutoScroll = () => {
+  clearInterval(intervalRef.current);
+  intervalRef.current = null;
+};
+
+const pauseOnHover = () => stopAutoScroll();
+const resumeOnLeave = () => startAutoScroll();
+
+
+
+useEffect(() => {
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        startAutoScroll();
+      } else {
+        stopAutoScroll();
+      }
+    },
+    { threshold: 0.5 }
+  );
+
+  if (scrollRef.current) observer.observe(scrollRef.current);
+
+  return () => observer.disconnect();
+}, []);
+
   return (
-    <div className=" flex flex-col items-center justify-center">
+    <div className=" flex flex-col items-center justify-center w-full ">
       <div className="flex gap-3 my-5 bg-gradient-to-r from-[#F0F6FF] to-[#F9F5FF] px-8 py-3 rounded-2xl border border-[#155DFC]">
         <img src={work} alt="" />
         <p>Featured work</p>
       </div>
-      <h1 className="text-4xl w-[240px] text-center">Projects we’re  <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#155DFC] via-[#8529F3] to-[#E2017C]">proud of</span></h1>
-      <p className="text-center text-[#4F4F4F] my-5 text-[14px]">Explore our recent work and see how we’ve helped businesses achieve their digital goals.</p>
+      <h1 className="text-4xl w-[240px] text-center">
+        Projects we’re{" "}
+        <span className="text-transparent bg-clip-text bg-gradient-to-b from-[#155DFC] via-[#8529F3] to-[#E2017C]">
+          proud of
+        </span>
+      </h1>
+      <p className="text-center text-[#4F4F4F] my-5 text-[14px]">
+        Explore our recent work and see how we’ve helped businesses achieve
+        their digital goals.
+      </p>
+      <ul ref={scrollRef} className="relative flex flex-row gap-6 overflow-x-auto w-full max-w-full no-scrollbar snap-x snap-mandatory">
+        {projects.map((project, i) => (
+          <li
+            ref={(el) => (itemRefs.current[i] = el)}
+              onMouseEnter={pauseOnHover}
+  onMouseLeave={resumeOnLeave}
+            key={i}
+            className="relative flex flex-col max-h-[531px] h-[531px] w-[310px] border  rounded-[35px] flex-shrink-0 shadow-xl shadow-[#48484826] my-10"
+          >
+            <img src={project.image} alt="" />
+            <div className="absolute top-4 left-4 bg-white px-4 py-2 rounded-3xl">
+              <h4
+                style={{
+                  "--from": project.colorFrom,
+                  "--via": project.colorVia,
+                  "--to": project.colorTo,
+                }}
+                className="text-transparent text-[14px] bg-clip-text bg-gradient-to-r from-[var(--from)] via-[var(--via)] to-[var(--to)]"
+              >
+                {project.services}
+              </h4>
+            </div>
+            <div className="relative h-full flex flex-col  w-full p-4">
+              <h1 className="text-xl font-semibold my-2">{project.name}</h1>
+              <p className="my-1 text-[#525252]">{project.description}</p>
+              <ul className="flex flex-wrap gap-3 p-2">
+                    {project.stacks.map((stack, i) => (
+                      <li key={i} className="border border-[#656565] px-4 py-1 rounded-2xl">
+                        {stack}
+                      </li>
+              ))}
+              </ul>
+              <Link className="flex items-center gap-3 mt-auto text-[#747474]"><p>Explore project</p><FaArrowRight /></Link>
+            </div>
+          </li>
+        ))}
+        
+      </ul>
+      <div className="flex items-center mt-6">
+  {projects.map((_, i) => {
+    const isActive = i === activeIndex;
+    const isConnected =
+     i === activeIndex || i === activeIndex - 1;
+
+    return (
+      <button
+        key={i}
+        onClick={() =>
+          itemRefs.current[i]?.scrollIntoView({
+            behavior: "smooth",
+            inline: "center",
+          })
+        }
+        className="flex items-center relative "
+      >
+        {/* Connector */}
+        {i !== 0 && (
+          <span
+            className={`h-[14px] absolute w-7 right-1 rounded-2xl transition-colors z-50 duration-300 ${
+              isActive ? "bg-gradient-to-r from-[#4155FB] via-[#8E25F3] to-[#DF0282]" : ""
+            }`}
+          />
+        )}
+
+        {/* Dot */}
+        <span
+          className={`w-3 absolut h-3 mx-1  rounded-full transition-all duration-300 ${
+            isConnected
+              ? "bg-blue-600 scale-110"
+              : "bg-[#D9D9D9]"
+          }`}
+        />
+      </button>
+    );
+  })}
+</div>
+
     </div>
   );
 };

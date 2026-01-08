@@ -156,12 +156,13 @@ const process = [
     },
 ]
 
-const Projects = [
+const projects = [
     {
         name: "TechFlow Dashboard",
         description : "A comprehensive analytics platform with real-time data visualization and AI-powered insights for...",
         stacks : ["React", "Typescript", "Analysis"],
         services : "Web Development",
+        image : "/images/project.png",
         colorFrom : "#2957FB",
         colorVia : "#9F1BF0",
         colorTo : "#DD0385"
@@ -171,6 +172,7 @@ const Projects = [
         description : "A comprehensive analytics platform with real-time data visualization and AI-powered insights for...",
         stacks : ["React", "Typescript", "Analysis"],
         services : "Web Development",
+        image : "/images/project.png",
         colorFrom : "#2957FB",
         colorVia : "#9F1BF0",
         colorTo : "#DD0385"
@@ -180,6 +182,7 @@ const Projects = [
         description : "A comprehensive analytics platform with real-time data visualization and AI-powered insights for...",
         stacks : ["React", "Typescript", "Analysis"],
         services : "Web Development",
+        image : "/images/project.png",
         colorFrom : "#2957FB",
         colorVia : "#9F1BF0",
         colorTo : "#DD0385"
@@ -189,6 +192,7 @@ const Projects = [
         description : "A comprehensive analytics platform with real-time data visualization and AI-powered insights for...",
         stacks : ["React", "Typescript", "Analysis"],
         services : "Web Development",
+        image : "/images/project.png",
         colorFrom : "#2957FB",
         colorVia : "#9F1BF0",
         colorTo : "#DD0385"
@@ -198,6 +202,7 @@ const Projects = [
         description : "A comprehensive analytics platform with real-time data visualization and AI-powered insights for...",
         stacks : ["React", "Typescript", "Analysis"],
         services : "Web Development",
+        image : "/images/project.png",
         colorFrom : "#2957FB",
         colorVia : "#9F1BF0",
         colorTo : "#DD0385"
@@ -207,10 +212,11 @@ const Projects = [
         description : "A comprehensive analytics platform with real-time data visualization and AI-powered insights for...",
         stacks : ["React", "Typescript", "Analysis"],
         services : "Web Development",
+        image : "/images/project.png",
         colorFrom : "#2957FB",
         colorVia : "#9F1BF0",
         colorTo : "#DD0385"
     },
 ]
 
-export { navDatas, servicesData,  trustedCompany, process, Projects };
+export { navDatas, servicesData,  trustedCompany, process, projects };
