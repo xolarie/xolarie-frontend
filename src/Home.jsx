@@ -1,3 +1,4 @@
+import { FaqsWrapper } from "./components/Faqs"
 import { FeaturedProjectsWrapper } from "./components/FeaturedProjects"
 import {HeroWrapper } from "./components/Hero"
 import { HomePricingWrapper } from "./components/HomePricing"
@@ -15,6 +16,7 @@ const Home = () => {
         <ProcessWrapper />
         <FeaturedProjectsWrapper />
         <HomePricingWrapper />
+        <FaqsWrapper />
     </div>
   )
 }

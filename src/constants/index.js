@@ -268,4 +268,35 @@ const homePricing = [
     },
 ]
 
-export { navDatas, servicesData, trustedCompany, process, projects, homePricing };
+const faqs = [
+    {
+        question : "What is XOLARIE?",
+        answer : "XOLARIE is a next-generation technology studio engineering intelligent digital systems, scalable software, and future-ready products. We operate at the intersection of innovation, automation, and performance."
+    },
+    {
+        question : "What solutions does XOLARIE build?",
+        answer : "We design and develop advanced web and mobile applications, product designs, blockchain and decentralized systems, AI-powered systems, automation frameworks, and digital infrastructures built for speed, security, and scalability."
+    },
+    {
+        question : "What technologies do you use?",
+        answer : "Our stack includes modern frameworks and tools such as JavaScript/TypeScript, React, Next.js, Nuxt.js, Angular.js Vue.js, Nest.js, Node.js, Python, Flask, Django, cloud services, automation tools, and AI-driven systems. Technology selection is always based on performance, security, and long-term scalability."
+    },
+    {
+        question : "Do you offer custom software development?",
+        answer : "Yes. Every solution we build is tailored to your specific business goals, technical requirements, and scalability needs. We do not use one-size-fits-all templates."
+    },
+    {
+        question : "Who is XOLARIE built for?",
+        answer : "Startups, creators, enterprises, businesses, organizations and innovators seeking cutting-edge digital solutions that go beyond conventional development."
+    },
+    {
+        question : "How does XOLARIE approach development?",
+        answer : "We engineer with precision — combining clean architecture, performance optimization, and forward-thinking design. Every solution is built for longevity, scalability, and seamless user experience."
+    },
+    {
+        question : "How do I start working with XOLARIE?",
+        answer : "Initiate contact through our platform. We analyze your vision, design a strategic roadmap, and engineer a solution tailored to your goals."
+    },
+]
+
+export { navDatas, servicesData, trustedCompany, process, projects, homePricing, faqs };

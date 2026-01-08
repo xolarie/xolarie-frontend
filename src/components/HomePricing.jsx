@@ -1,4 +1,4 @@
-import { FaCheck } from "react-icons/fa";
+import { FaArrowRight, FaCheck } from "react-icons/fa";
 import { homePricing } from "../constants";
 import { SectionWrapper } from "../hoc";
 
@@ -58,6 +58,14 @@ const HomePricing = () => {
           </li>
         ))}
       </ul>
+            <div className="flex flex-col items-center w-[260px] rounded-2xl border-[#0693F7] p-4 bg-gradient-to-r from-[#2658FB0F] via-[#9D1CF10F] to-[#E2017C0F] border-2 h-[260px]">
+              <p className="text-2xl font-bold text-center mb-5">Want to see more?</p>
+              <p className="text-center mb-8">View all payment plans and select one that aligns with your interests</p>
+              <button className=" bg-gradient-to-r text-white px-6 py-4 rounded-xl from-[#225BFB] to-[#931DFA] flex gap-3 justify-center items-center">
+                <p>View all plans</p>
+                <FaArrowRight />
+              </button>
+            </div>
     </div>
   );
 };
