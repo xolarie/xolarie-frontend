@@ -19,7 +19,7 @@ const Process = () => {
       <p className="md:w-[470px] mb-12 mt-4 text-center">A proven 5-step process that transforms ideas into exceptional digital products</p>
       <ul className="flex flex-row mb-6 gap-6 overflow-x-auto w-full max-w-full no-scrollbar snap-x snap-mandatory md:pb-10 lg:gap-0 lg:items-center lg:justify-center">
         {process.map((item, i) => (
-          <li key={i} className="relative w-[280px] h-[320px] p-4 flex-shrink-0 lg:w-[174px] lg:h-[174px]  xl:w-[210px] xl:h-[200px] 2xl:w-[260px] 2xl:h-[260px]">
+          <li key={i} className="relative mb-10 w-[280px] h-[320px] p-4 flex-shrink-0 lg:w-[174px] lg:h-[174px]  xl:w-[210px] xl:h-[200px] 2xl:w-[260px] 2xl:h-[260px]">
             <h1 className="absolute top-0 right-0 border  p-2 px-4 rounded-full shadow-2xl shadow-[#48484826] bg-white lg:text-[10px]  lg:font-semibold" style={{ color: item.color }}>
               {i + 1}
             </h1>
