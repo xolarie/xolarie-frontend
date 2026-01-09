@@ -299,4 +299,28 @@ const faqs = [
     },
 ]
 
-export { navDatas, servicesData, trustedCompany, process, projects, homePricing, faqs };
+const testimonials = [
+    {
+        name : "Clarke Ward",
+        company : "CEO, Techcorp",
+        testimonial : "“Xolarie transformed our vision into a stunning reality. Their team delivered a web platform that not only looks beautiful but performs flawlessly. Our user engagement increased by 200% in the first month.”",
+        star : 5,
+        pics : "/images/clerk.png"
+    },
+    {
+        name : "Ward",
+        company : "CEO",
+        testimonial : "“Their team delivered a web platform that not only looks beautiful but performs flawlessly. Our user engagement increased by 200% in the first month.”",
+        star : 4,
+        pics : "/images/clerk.png"
+    },
+    {
+        name : "Clarke",
+        company : "Techcorp",
+        testimonial : "“Our user engagement increased by 200% in the first month.”",
+        star : 5,
+       pics : "/images/clerk.png"
+    },
+]
+
+export { navDatas, servicesData, trustedCompany, process, projects, homePricing, faqs, testimonials };

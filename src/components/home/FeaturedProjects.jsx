@@ -174,9 +174,13 @@ const FeaturedProjects = () => {
           );
         })}
       </div>
-            <div className="flex flex-col items-center w-[260px] my-8 rounded-2xl border-[#0693F7] p-4 bg-gradient-to-r from-[#2658FB0F] via-[#9D1CF10F] to-[#E2017C0F] border-2 h-[260px]">
-        <p className="text-3xl font-semibold text-center mb-5">Want to see more?</p>
-        <p className="text-center mb-8">Browse our complete portfolio of completed projects</p>
+      <div className="flex flex-col items-center w-[260px] my-8 rounded-2xl border-[#0693F7] p-4 bg-gradient-to-r from-[#2658FB0F] via-[#9D1CF10F] to-[#E2017C0F] border-2 h-[260px]">
+        <p className="text-3xl font-semibold text-center mb-5">
+          Want to see more?
+        </p>
+        <p className="text-center mb-8">
+          Browse our complete portfolio of completed projects
+        </p>
         <button className=" bg-gradient-to-r text-white px-6 py-4 rounded-xl from-[#225BFB] to-[#931DFA] flex gap-3 justify-center items-center">
           <p>View our portfolio</p>
           <FaArrowRight />

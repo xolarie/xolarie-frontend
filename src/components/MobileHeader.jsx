@@ -38,7 +38,7 @@ const MobileHeader = () => {
           <img
             src={logo}
             alt="xolarie logo"
-            className="h-[24px] w-[76px] mr-auto"
+            className="h-[24px] w-[76px] mr-auto hidden"
           />
         </Link>
         <div className="flex flex-row ml-auto mr-3">
