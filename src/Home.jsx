@@ -1,10 +1,11 @@
-import { FaqsWrapper } from "./components/Faqs"
-import { FeaturedProjectsWrapper } from "./components/FeaturedProjects"
-import {HeroWrapper } from "./components/Hero"
-import { HomePricingWrapper } from "./components/HomePricing"
-import { ProcessWrapper } from "./components/Process"
-import { ServicesWrapper } from "./components/Services"
-import { TrustedCompWrapper } from "./components/TrustedComp"
+import { FaqsWrapper } from "./components/home/Faqs"
+import { FeaturedProjectsWrapper } from "./components/home/FeaturedProjects"
+import {HeroWrapper } from "./components/home/Hero"
+import { HomePricingWrapper } from "./components/home/HomePricing"
+import { ProcessWrapper } from "./components/home/Process"
+import { ServicesWrapper } from "./components/home/Services"
+import { TestimonialsWrapper } from "./components/home/Testimonials"
+import { TrustedCompWrapper } from "./components/home/TrustedComp"
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
         <FeaturedProjectsWrapper />
         <HomePricingWrapper />
         <FaqsWrapper />
+        <TestimonialsWrapper />
     </div>
   )
 }

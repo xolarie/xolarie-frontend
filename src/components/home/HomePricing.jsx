@@ -1,6 +1,6 @@
 import { FaArrowRight, FaCheck } from "react-icons/fa";
-import { homePricing } from "../constants";
-import { SectionWrapper } from "../hoc";
+import { homePricing } from "../../constants";
+import { SectionWrapper } from "../../hoc";
 
 const HomePricing = () => {
   return (

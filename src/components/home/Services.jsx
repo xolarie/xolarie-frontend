@@ -1,6 +1,6 @@
-import { SectionWrapper } from "../hoc";
+import { SectionWrapper } from "../../hoc";
 import { FaArrowRight, FaBolt } from "react-icons/fa6";
-import { servicesData } from "../constants";
+import { servicesData } from "../../constants";
 import { Link } from "react-router-dom";
 
 const Services = () => {

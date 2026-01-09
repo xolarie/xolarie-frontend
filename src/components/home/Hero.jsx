@@ -6,9 +6,9 @@ import { VscGame } from "react-icons/vsc";
 import { FaStar } from "react-icons/fa6";
 import { FaArrowRight } from "react-icons/fa";
 import { FaAngleDown } from "react-icons/fa";
-import { SectionWrapper } from "../hoc";
+import { SectionWrapper } from "../../hoc";
 import { motion } from "framer-motion";
-import HeroAnimation from "./HeroAnimation";
+import HeroAnimation from "../HeroAnimation";
 
 const HeroServices = [
   {

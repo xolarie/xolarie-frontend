@@ -1,5 +1,5 @@
-import { SectionWrapper } from "../hoc";
-import { trustedCompany } from "../constants";
+import { SectionWrapper } from "../../hoc";
+import { trustedCompany } from "../../constants";
 import { useRef } from "react";
 
 const TrustedComp = () => {

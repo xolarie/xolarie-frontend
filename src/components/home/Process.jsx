@@ -1,6 +1,6 @@
-import { SectionWrapper } from "../hoc";
+import { SectionWrapper } from "../../hoc";
 import bolt from "/images/bolt.png";
-import { process } from "../constants";
+import { process } from "../../constants";
 import { FaArrowRight } from "react-icons/fa6";
 
 const Process = () => {

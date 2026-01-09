@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useRef, useState, useEffect } from "react";
-import { projects } from "../constants";
-import { SectionWrapper } from "../hoc";
+import { projects } from "../../constants";
+import { SectionWrapper } from "../../hoc";
 import work from "/images/work-history.png";
 import { FaArrowRight } from "react-icons/fa6";
 
