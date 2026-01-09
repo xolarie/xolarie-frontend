@@ -26,7 +26,7 @@ const HomePricing = () => {
         {homePricing.map((item, i) => (
           <li key={i} className="relative flex justify-center">
             {item.isMostPopular && (
-              <h1 className="shadow-xl shadow-[#00000040] absolute -translate-y-1/2 px-6 py-2 rounded-3xl top-8 bg-gradient-to-r from-[#155DFC] via-[#9F1EED] to-[#F22992] ">
+              <h1 className="shadow-xl text-white shadow-[#00000040] absolute -translate-y-1/2 px-6 py-2 rounded-3xl top-8 bg-gradient-to-r from-[#155DFC] via-[#9F1EED] to-[#F22992] ">
                 Most Popular
               </h1>
             )}
