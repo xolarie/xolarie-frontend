@@ -323,4 +323,23 @@ const testimonials = [
     },
 ]
 
-export { navDatas, servicesData, trustedCompany, process, projects, homePricing, faqs, testimonials };
+const footersLinks = [
+    {
+        name : "Services",
+        link : ["Web Development", "App Development", "UI/UX Design", "AI & Automation", "Game Development", "Backend Systems"],
+    },
+    {
+        name : "Solutions",
+        link : ["E-commerce", "Saas Products", "Mobile App", "Enterprise Solutions", "Consulting"],
+    },
+    {
+        name : "Company",
+        link : ["About Us", "Our Works", "Careers", "Blogs", "Contact"],
+    },
+    // {
+    //     name : "Follow Us",
+    //     link : [],
+    // },
+]
+
+export { navDatas, servicesData, trustedCompany, process, projects, homePricing, faqs, testimonials, footersLinks };
