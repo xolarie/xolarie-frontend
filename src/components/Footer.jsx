@@ -69,6 +69,20 @@ const Footer = () => {
               <FaInstagram className="text-2xl text-[#BEBEBE]" />
             </span>
           </div>
+          <div>
+            <h4 className="text-[#BEBEBE] my-4">Stay Updated</h4>
+            <div>
+              <input type="email" placeholder="Your email" className="h-8 rounded-xl border-[#3574FF] border bg-transparent p-2"/> <button className="bg-gradient-to-r from-[#225BFB] to-[#931DFA] py-1 px-3 rounded-xl" >Join</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="border-t-2 my-14 py-6">
+        <h1 className="text-center text-[#BEBEBE]">2026 Xolarie. All right reserved</h1>
+        <div className="flex flex-row justify-center my-6 gap-3 text-[#BEBEBE] items-center w-full">
+        <div>Privacy policy</div>
+        <div>Terms of Service</div>
+        <div>Cookies</div>
         </div>
       </div>
     </div>
