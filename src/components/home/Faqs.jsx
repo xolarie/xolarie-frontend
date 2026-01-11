@@ -48,7 +48,7 @@ const Faqs = () => {
               </span>
             </button>
             <p
-              className={`my-4 text-[12px] w-[70vw]  transition-all duration-300 ease-out   ${
+              className={`my-4 text-[12px] w-[70vw]  transition-all duration-300 ease-out  md:w-[60vw]  ${
                 openAnswer === i
                   ? "opacity-100 translate-y-0 pointer-events-auto"
                   : "opacity-0 -translate-y-2 pointer-events-none "

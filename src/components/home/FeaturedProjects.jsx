@@ -101,7 +101,7 @@ const FeaturedProjects = () => {
             onMouseEnter={pauseOnHover}
             onMouseLeave={resumeOnLeave}
             key={i}
-            className="relative flex flex-col max-h-[531px] h-[531px] w-[310px] border  rounded-[35px] flex-shrink-0 shadow-xl shadow-[#48484826] my-10 md:w-[200px] md:h-[400px] lg:w-[260px] xl:w-[360px] xl:h-[450px] 2xl:w-[420px] 2xl:h-[480px]"
+            className="relative flex flex-col max-h-[531px] h-[531px] w-[310px] border  rounded-[35px] flex-shrink-0 shadow-xl shadow-[#48484826] my-10 md:rounded-2xl md:w-[200px] md:h-[400px] lg:w-[260px] xl:w-[360px] xl:h-[450px] 2xl:w-[420px] 2xl:h-[480px]"
           >
             <img src={project.image} alt="" />
             <div className="absolute top-4 left-4 bg-white px-4 py-2 rounded-3xl md:top-2 md:left-2">

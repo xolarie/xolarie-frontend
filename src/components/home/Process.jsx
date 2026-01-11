@@ -24,7 +24,7 @@ const Process = () => {
         {process.map((item, i) => (
           <li
             key={i}
-            className="relative mb-10 w-[280px] h-[320px] p-4 flex-shrink-0 lg:w-[174px] lg:h-[174px]  xl:w-[210px] xl:h-[200px] 2xl:w-[260px] 2xl:h-[260px]"
+            className="relative mb-10 w-[280px] h-[320px] p-4 flex-shrink-0 lg:w-[174px] lg:h-[198px]  xl:w-[210px] xl:h-[220px] 2xl:w-[260px] 2xl:h-[260px]"
           >
             <h1
               className="absolute top-0 right-0 border  p-2 px-4 rounded-full shadow-2xl shadow-[#48484826] bg-white lg:text-[10px]  lg:font-semibold"
