@@ -10,7 +10,7 @@ import { TrustedCompWrapper } from "./components/home/TrustedComp"
 
 const Home = () => {
   return (
-    <div className="flex flex-col ">
+    <div className="flex flex-col overflow-x-hidden">
         <HeroWrapper />
         <ServicesWrapper />
         <TrustedCompWrapper />

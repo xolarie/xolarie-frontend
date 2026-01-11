@@ -77,7 +77,7 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center relative">
       <div className="p-4 px-8 rounded-3xl border border-[#155DFC] bg-gradient-to-r from-[#F0F6FF] to-[#F9F5FF] flex flex-row gap-4 items-center">
         <img src={star} className="h-[20px]" />
         <p>Client’s success stories</p>
@@ -92,65 +92,67 @@ const Testimonials = () => {
         Don’t take our word for it. Hear from clients who have experienced the
         Xolarie difference.
       </p>
-      <ul
-        ref={scrollRef}
-        className=" flex flex-row overflow-x-scroll w-full gap-6 items-center"
-      >
-        <button className="absolute rounded-2xl z-20 bg-white p-2 shadow-sm shadow-[#AEAEAE]">
+      <div className="flex items-center relative">
+        <button className="absolute rounded-2xl z-20 bg-white p-2 shadow-xl shadow-[#AEAEAE]">
           <FaAngleLeft />
         </button>
-        {testimonials.map((testimonial, i) => (
-          <li
-            ref={(el) => (itemRefs.current[i] = el)}
-            onMouseEnter={pauseOnHover}
-            onMouseLeave={resumeOnLeave}
-            key={i}
-            className="flex flex-row items-center relative "
-          >
-            <div className="p-4 flex flex-col border h-[380px] flex-shrink-0 w-[80vw] rounded-3xl mx-5">
-              <div className="flex gap-1">
-                {Array.from({ length: 5 }, (_, index) => {
-                  const starNumber = index + 1;
-                  let rating = testimonial.star;
+        <ul
+          ref={scrollRef}
+          className="md:relative flex flex-row overflow-x-scroll w-full gap-6 items-center no-scrollbar py-10 md:w-[650px]"
+        >
+          {testimonials.map((testimonial, i) => (
+            <li
+              ref={(el) => (itemRefs.current[i] = el)}
+              onMouseEnter={pauseOnHover}
+              onMouseLeave={resumeOnLeave}
+              key={i}
+              className="flex flex-row items-center relative md:items-start"
+            >
+              <div className="p-4 flex flex-col border h-[380px] flex-shrink-0 w-[80vw] rounded-3xl mx-5 md:h-[220px] shadow-xl shadow-[#00000026] md:w-[600px]">
+                <div className="flex gap-1">
+                  {Array.from({ length: 5 }, (_, index) => {
+                    const starNumber = index + 1;
+                    let rating = testimonial.star;
 
-                  return (
-                    <FaStar
-                      key={starNumber}
-                      className={`text-lg ${
-                        starNumber <= rating
-                          ? "text-yellow-400"
-                          : "text-gray-300"
-                      }`}
-                    />
-                  );
-                })}
-              </div>
-              <p className="mt-[20px] text-lg text-[#4F4F4F]">
-                {testimonial.testimonial}
-              </p>
-              <div className="flex items-center gap-3 mt-auto justify-center">
-                <img
-                  src={testimonial.pics}
-                  className="h-20 w-20 rounded-full"
-                  alt="testimonial image"
-                />
-                <div>
-                  <p>{testimonial.name}</p>
-                  <p>{testimonial.company}</p>
+                    return (
+                      <FaStar
+                        key={starNumber}
+                        className={`text-lg ${
+                          starNumber <= rating
+                            ? "text-yellow-400"
+                            : "text-gray-300"
+                        }`}
+                      />
+                    );
+                  })}
+                </div>
+                <p className="mt-[20px] text-lg text-[#4F4F4F]">
+                  {testimonial.testimonial}
+                </p>
+                <div className="flex items-center gap-3 mt-auto justify-center md:items-start md:justify-start">
+                  <img
+                    src={testimonial.pics}
+                    className="h-20 w-20 rounded-full"
+                    alt="testimonial image"
+                  />
+                  <div>
+                    <p>{testimonial.name}</p>
+                    <p>{testimonial.company}</p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </li>
-        ))}
-        <button className="absolute right-6 rounded-2xl bg-white p-2 shadow-sm shadow-[#AEAEAE]">
+            </li>
+          ))}
+        </ul>
+        <button className="absolute right-0 rounded-2xl bg-white p-2 shadow-sm shadow-[#AEAEAE] border">
           <FaAngleRight />
         </button>
-      </ul>
+      </div>
+
       <div className="flex items-center mt-6">
         {testimonials.map((_, i) => {
           const isActive = i === activeIndex;
           const isConnected = i === activeIndex || i === activeIndex - 1;
-
           return (
             <button
               key={i}
@@ -184,12 +186,14 @@ const Testimonials = () => {
         })}
       </div>
       <div className="flex md:flex md:items-center md:gap-14 xl:gap-20 2xl:gap-28">
-        <div className="flex flex-row items-center gap-2 my-10">
+        <div className="flex flex-row items-center gap-2 my-10 md:gap-x-16 md:my-16">
           <div className="flex flex-col items-center">
             <h1 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079]  md:text-4xl">
               50+
             </h1>
-            <p className="text-[#4F4F4F] text-[12px] text-nowrap">Happy Clients</p>
+            <p className="text-[#4F4F4F] text-[12px] text-nowrap">
+              Happy Clients
+            </p>
           </div>
           <div className="flex flex-col items-center">
             <h1 className="text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079]  md:text-4xl">

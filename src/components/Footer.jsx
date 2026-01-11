@@ -10,7 +10,7 @@ import { FaInstagram } from "react-icons/fa6";
 const Footer = () => {
   return (
     <div className="bg-[#10172A] p-6">
-      <div>
+      <div className="flex">
         <div>
           <img src={xolarie} alt="" />
           <p className="text-[#BEBEBE]">
@@ -30,7 +30,7 @@ const Footer = () => {
             <span>Lagos, Nigeria</span>
           </div>
         </div>
-        <ul>
+        <ul className="flex">
           {footersLinks.map((item, i) => (
             <li key={i}>
               <h1 className="relative text-[#BEBEBE] font-semibold text-2xl my-4 pb-3">
@@ -77,7 +77,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="border-t-2 my-14 py-6">
+      <div className="border-t-2 my-14 py-6 flex flex-col">
         <h1 className="text-center text-[#BEBEBE]">2026 Xolarie. All right reserved</h1>
         <div className="flex flex-row justify-center my-6 gap-3 text-[#BEBEBE] items-center w-full">
         <div>Privacy policy</div>

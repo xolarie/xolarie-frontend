@@ -18,7 +18,7 @@ const Faqs = () => {
         <p>Support & Guidance</p>
       </div>
       <div className="flex flex-col items-center">
-        <h1 className="text-3xl my-8 text-center">
+        <h1 className="text-3xl my-8 text-center ">
           Frequently asked{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079]">
             Questions
@@ -32,7 +32,7 @@ const Faqs = () => {
         {faqs.map((item, i) => (
           <li
             key={i}
-            className={`flex flex-col  border py-3 px-6 rounded-2xl w-[350px] relative  transition-all duration-300 ease-out   ${
+            className={`flex flex-col  border py-3 px-6 rounded-2xl w-[350px] relative  transition-all duration-300 ease-out md:w-[70vw]   ${
               openAnswer === i ? "" : "h-20"
             }`}
           >
@@ -60,7 +60,7 @@ const Faqs = () => {
         ))}
       </ul>
       <div className="w-full flex flex-col items-center my-8">
-        <div className="flex items-center w-full gap-4 my-4">
+        <div className="flex items-center w-full gap-4 my-4 md:w-[60vw]">
           <span className="flex-1 h-px bg-gray-300"></span>
 
           <p className="text-center whitespace-nowrap">Still have questions?</p>
@@ -68,7 +68,7 @@ const Faqs = () => {
           <span className="flex-1 h-px bg-gray-300"></span>
         </div>
         <p className="text-center my-4">We’re here to help. Get in touch with our team to get personalized answers</p>
-        <button className="w-full flex flex-row items-center gap-3 justify-center text-white py-3 rounded-2xl my-4 bg-gradient-to-r from-[#225BFB] to-[#931DFA]">Get a custom quote <FaArrowRight /></button>
+        <button className="w-full flex flex-row items-center gap-3 justify-center text-white py-3 rounded-2xl my-4 bg-gradient-to-r from-[#225BFB] to-[#931DFA] md:w-[200px] md:text-[12px]">Get a custom quote <FaArrowRight /></button>
         <p className="text-center">No commitment required | Free consultation | Fast response</p>
       </div>
     </div>
