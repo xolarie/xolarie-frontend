@@ -94,14 +94,14 @@ const Hero = () => {
             </div>
             <motion.div
               variants={fadeUp}
-              className="space-x-6 mt-5 flex md:items-start"
+              className="flex-col gap-3 mt-5 flex md:items-start w-full md:flex-row"
             >
-              <button className="bg-gradient-to-r from-[#225BFB] to-[#931DFA] p-2 rounded-2xl text-white flex flex-row items-center gap-2 hover:scale-110 duration-300 w-32 md:rounded-lg md:h-12">
-                <p className="text-[12px] md:text-[14px]">Start Projects </p>
+              <button className="w-full justify-center bg-gradient-to-r from-[#225BFB] to-[#931DFA] p-2 py-4 rounded-xl text-white flex flex-row items-center gap-2 hover:scale-110 duration-300 md:w-32 md:rounded-lg md:h-12">
+                <p className="text-[16px] md:text-[14px]">Start Projects </p>
                 <FaArrowRight />
               </button>
-              <button className="border-black border-[0.5px] p-2 rounded-2xl flex flex-row items-center gap-2 hover:scale-110 duration-300 md:rounded-lg md:h-12">
-                <p className="text-[12px] md:text-[14px]">View Our Projects</p>
+              <button className="w-full py-4 justify-center border-black border-[0.5px] p-2 rounded-xl flex flex-row items-center gap-2 hover:scale-110 duration-300 md:w-32 md:rounded-lg md:h-12">
+                <p className="text-[16px] md:text-[14px] md:text-nowrap">View Our Projects</p>
                 <FaArrowRight />
               </button>
             </motion.div>

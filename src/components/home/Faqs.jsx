@@ -62,14 +62,12 @@ const Faqs = () => {
       <div className="w-full flex flex-col items-center my-8">
         <div className="flex items-center w-full gap-4 my-4 md:w-[60vw]">
           <span className="flex-1 h-px bg-gray-300"></span>
-
-          <p className="text-center whitespace-nowrap">Still have questions?</p>
-
+          <p className="text-center whitespace-nowrap text-[#7F7F7F]">Still have questions?</p>
           <span className="flex-1 h-px bg-gray-300"></span>
         </div>
-        <p className="text-center my-4">We’re here to help. Get in touch with our team to get personalized answers</p>
+        <p className="text-center my-4 text-[#4F4F4F]">We’re here to help. Get in touch with our team to get personalized answers</p>
         <button className="w-full flex flex-row items-center gap-3 justify-center text-white py-3 rounded-2xl my-4 bg-gradient-to-r from-[#225BFB] to-[#931DFA] md:w-[200px] md:text-[12px]">Get a custom quote <FaArrowRight /></button>
-        <p className="text-center">No commitment required | Free consultation | Fast response</p>
+        <p className="text-center text-[#4F4F4F]">No commitment required | Free consultation | Fast response</p>
       </div>
     </div>
   );

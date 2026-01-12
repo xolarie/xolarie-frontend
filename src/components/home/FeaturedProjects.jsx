@@ -178,8 +178,8 @@ const FeaturedProjects = () => {
           );
         })}
       </div>
-      <div className="flex flex-col items-center w-[260px] rounded-2xl border-[#0693F7] p-4 bg-gradient-to-r from-[#2658FB0F] via-[#9D1CF10F] to-[#E2017C0F] border-2 h-[260px] md:flex-row md: justify-center md:h-[85px] md:rounded-3xl md:w-[432px]">
-        <div className="md:mx-4">
+      <div className="flex flex-col items-center w-[260px] rounded-2xl border-[#0693F7] p-4 my-10 bg-gradient-to-r from-[#2658FB0F] via-[#9D1CF10F] to-[#E2017C0F] border-2 h-[260px] md:flex-row md: justify-center md:h-[85px] md:rounded-3xl md:w-[432px]">
+        <div className="md:mx-4 ">
           <p className="text-2xl font-bold text-center mb-5 md:text-lg md:mb-0">
             Want to see more?
           </p>

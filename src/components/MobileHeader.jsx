@@ -2,7 +2,6 @@ import logo from "/images/Logo.png";
 import getStartedButton from "/images/get_started_button.png";
 import mobileBar from "/images/mobile-navbar.png";
 import { useState, useEffect, useRef } from "react";
-import { IoIosArrowDown } from "react-icons/io";
 import { MdOutlineClose } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { navDatas } from "../constants";
@@ -33,7 +32,7 @@ const MobileHeader = () => {
 
   return (
     <>
-      <div className="h-[60px] w-[100vw] bg-white z-50 px-4 content-center justify-center flex flex-row overflow-x- pt-5 fixed">
+      <div className="h-[60px] w-[100vw] bg-white z-50 px-4 content-center justify-center rounded-2xl  flex flex-row overflow-x- pt-5 fixed">
         <Link to="/">
           <img
             src={logo}
@@ -61,8 +60,8 @@ const MobileHeader = () => {
       <ul
         ref={navRef}
         className={`
-    fixed top-0 right-0  w-[60vw] mt-16
-    bg-[#3D7AFF] z-50 pl-4 pr-6 divide-y
+    fixed top-0 right-0  w-[60vw] mt-16 rounded-xl shadow-xl shadow-[#00000040]
+    bg-white z-50 pl-4 pr-6 divide-y
     transform transition-transform duration-300 ease-in-out
     ${navBarOpen ? "translate-x-0" : "translate-x-full"}
   `}
@@ -72,19 +71,18 @@ const MobileHeader = () => {
             <li key={index} className="py-4 w-full">
               <div className="w-full">
                 <button
-                  className="font-inter text-white font-bold flex w-full"
+                  className="font-inter text-[black]  flex w-full"
                   onClick={() =>
                     setActiveDropDown(index === activeDropDown ? null : index)
                   }
                 >
-                  <p>{data.page}</p>
-                  <IoIosArrowDown className="ml-auto" />
+                  <p className="">{data.page}</p>
                 </button>
               </div>
               {activeDropDown === index && (
                 <ul className="ml-4 mt-2 space-y-3 divide-y-2">
                   {data.dropdown.map((item, subIndex) => (
-                    <li key={subIndex} className="font-inter text-white">
+                    <li key={subIndex} className="font-inter text-black">
                       <Link to={item.path}> {item.page}</Link>
                     </li>
                   ))}
