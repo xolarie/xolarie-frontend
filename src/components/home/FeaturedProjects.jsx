@@ -103,7 +103,7 @@ const FeaturedProjects = () => {
             key={i}
             className="relative flex flex-col max-h-[531px] h-[531px] w-[310px] border  rounded-[35px] flex-shrink-0 shadow-xl shadow-[#48484826] my-10 md:rounded-2xl md:w-[200px] md:h-[400px] lg:w-[260px] xl:w-[360px] xl:h-[450px] 2xl:w-[420px] 2xl:h-[480px]"
           >
-            <img src={project.image} alt="" />
+            <img src={project.image} alt="" className="xl:h-56"/>
             <div className="absolute top-4 left-4 bg-white px-4 py-2 rounded-3xl md:top-2 md:left-2">
               <h4
                 style={{
@@ -111,30 +111,30 @@ const FeaturedProjects = () => {
                   "--via": project.colorVia,
                   "--to": project.colorTo,
                 }}
-                className="text-transparent text-[14px] bg-clip-text bg-gradient-to-r from-[var(--from)] via-[var(--via)] to-[var(--to)] md:text-[8px] "
+                className="text-transparent text-[14px] bg-clip-text bg-gradient-to-r from-[var(--from)] via-[var(--via)] to-[var(--to)] md:text-[8px] xl:text-[16px]"
               >
                 {project.services}
               </h4>
             </div>
             <div className="relative h-full flex flex-col  w-full p-4">
-              <h1 className="text-xl font-semibold my-2 md:text-[14px]">
+              <h1 className="text-xl font-semibold my-2 md:text-[20px]">
                 {project.name}
               </h1>
-              <p className="my-1 text-[#525252] md:text-[10px]">
+              <p className="my-1 text-[#525252] md:text-[10px] xl:text-[14px]">
                 {project.description}
               </p>
               <ul className="flex flex-wrap gap-3 p-2">
                 {project.stacks.map((stack, i) => (
                   <li
                     key={i}
-                    className="border border-[#656565] px-4 py-1 rounded-2xl md:text-[10px] md:px-2"
+                    className="border border-[#656565] px-4 py-1 rounded-2xl md:text-[10px] md:px-2 xl:text-[14px]"
                   >
                     {stack}
                   </li>
                 ))}
               </ul>
               <Link className="flex items-center gap-3 mt-auto text-[#747474]">
-                <p className="md:text-[12px]">Explore project</p>
+                <p className="md:text-[12px] xl:text-[16px]">Explore project</p>
                 <FaArrowRight />
               </Link>
             </div>
