@@ -41,10 +41,10 @@ const MobileHeader = () => {
           />
         </Link>
         <div className="flex flex-row ml-auto mr-3">
-          <img
+          <img 
             src={getStartedButton}
             alt="Get Started"
-            className="h-8 mr-4 hidden"
+            className="h-8 mr-6 hidden"
           />
           <div className="h-8 bg-white px-3  pt-1 rounded-md justify-center ">
             <button onClick={toggleNavBar}>
@@ -70,14 +70,18 @@ const MobileHeader = () => {
           navDatas.map((data, index) => (
             <li key={index} className="py-4 w-full">
               <div className="w-full">
-                <button
-                  className="font-inter text-[black]  flex w-full"
-                  onClick={() =>
-                    setActiveDropDown(index === activeDropDown ? null : index)
-                  }
-                >
-                  <p className="">{data.page}</p>
-                </button>
+                {data.path ? (
+                  <Link to={data.path}>{data.page}</Link>
+                ) : (
+                  <button
+                    className="font-inter text-[black]  flex w-full"
+                    onClick={() =>
+                      setActiveDropDown(index === activeDropDown ? null : index)
+                    }
+                  >
+                    <p className="">{data.page}</p>
+                  </button>
+                )}
               </div>
               {activeDropDown === index && (
                 <ul className="ml-4 mt-2 space-y-3 divide-y-2">
