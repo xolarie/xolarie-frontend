@@ -9,6 +9,7 @@ import { FaAngleDown } from "react-icons/fa";
 import { SectionWrapper } from "../../hoc";
 import { motion } from "framer-motion";
 import HeroAnimation from "../HeroAnimation";
+import { useState } from "react";
 
 const HeroServices = [
   {
@@ -34,6 +35,8 @@ const HeroServices = [
 ];
 
 const Hero = () => {
+
+  const [form, setForm] = useState(null)
   const fadeUp = {
     hidden: { opacity: 0, y: 30 },
     visible: {
