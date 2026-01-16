@@ -36,7 +36,7 @@ const HeroServices = [
 
 const Hero = () => {
 
-  const [form, setForm] = useState(null)
+  // const [form, setForm] = useState(null)
   const fadeUp = {
     hidden: { opacity: 0, y: 30 },
     visible: {
