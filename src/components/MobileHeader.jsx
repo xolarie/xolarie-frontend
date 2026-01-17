@@ -1,4 +1,4 @@
-import logo from "/images/Logo.png";
+// import logo from "/images/Logo.png";
 import getStartedButton from "/images/get_started_button.png";
 import mobileBar from "/images/mobile-navbar.png";
 import { useState, useEffect, useRef } from "react";
@@ -34,11 +34,10 @@ const MobileHeader = () => {
     <>
       <div className="h-[60px] w-[100vw] bg-white z-50 px-4 content-center justify-center rounded-2xl  flex flex-row overflow-x- pt-5 fixed">
         <Link to="/">
-          <img
-            src={logo}
-            alt="xolarie logo"
-            className="h-[24px] w-[76px] mr-auto"
-          />
+        <Link to="/" className="flex">
+        {/* <img src={logo} alt="" /> */}
+          <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079] font-semibold">Xolarie</h1>
+        </Link>
         </Link>
         <div className="flex flex-row ml-auto mr-3">
           <img 

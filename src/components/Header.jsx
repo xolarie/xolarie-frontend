@@ -1,6 +1,5 @@
-import logo from "/images/Logo.png";
+// import logo from "/images/Logo.png";
 import { navDatas } from "../constants";
-// import { IoIosArrowDown } from "react-icons/io";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
@@ -13,11 +12,14 @@ const Header = () => {
 
   return (
     <div className="z-50 w-[100vw] h-16 px-24 py-10 flex flex-row items-center fixed bg-white md:px-14 lg:px-16 xl:px-20 2xl:px-24">
-      <div>
-        <Link to="/">
-          <img src={logo} alt="Logo" className="h-16 md:h-6" />
+<div className="relative flex justify-center items-center h-20">
+        <Link to="/" className="flex items-center justify-center gap-2">
+        {/* <img src={logo} alt="" className="h-4" /> */}
+          <h1 className="text-transparent  bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079] font-semibold">Xolarie</h1>
         </Link>
-      </div>
+</div>
+
+
       <nav className="flex flex-row w-full">
         <ul className="flex justify-center items-center relative mr-auto w-full md:ml-10 lg:ml-[10vw] xl:ml-[10vw]">
           {navDatas.map((item, index) => (

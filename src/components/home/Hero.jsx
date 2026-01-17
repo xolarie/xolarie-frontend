@@ -9,7 +9,7 @@ import { FaAngleDown } from "react-icons/fa";
 import { SectionWrapper } from "../../hoc";
 import { motion } from "framer-motion";
 import HeroAnimation from "../HeroAnimation";
-import { useState } from "react";
+// import { useState } from "react";
 
 const HeroServices = [
   {

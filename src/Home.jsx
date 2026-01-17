@@ -1,7 +1,7 @@
 import { FaqsWrapper } from "./components/home/Faqs"
 import { FeaturedProjectsWrapper } from "./components/home/FeaturedProjects"
 import {HeroWrapper } from "./components/home/Hero"
-import { HomePricingWrapper } from "./components/home/HomePricing"
+import { HomeServiceWrapper  } from "./components/home/HomeService"
 import { ProcessWrapper } from "./components/home/Process"
 import { ServicesWrapper } from "./components/home/Services"
 import { TestimonialsWrapper } from "./components/home/Testimonials"
@@ -16,7 +16,7 @@ const Home = () => {
         <TrustedCompWrapper />
         <ProcessWrapper />
         <FeaturedProjectsWrapper />
-        <HomePricingWrapper />
+        <HomeServiceWrapper />
         <FaqsWrapper />
         <TestimonialsWrapper />
     </div>

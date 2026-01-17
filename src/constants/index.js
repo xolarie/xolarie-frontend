@@ -226,47 +226,65 @@ const projects = [
     },
 ]
 
-const homePricing = [
-    {
-        service: "Web development",
-        priceInNaira: "",
-        priceInUsd: "$300+",
-        description: "Modern, responsive website and web applications designed for speed, security, and scalability",
-        include: ["Responsive", "Web applications", "SaaS platforms", "Performance-optimized builds", "Responsive Websites"],
-        isMostPopular: false
-    },
-    {
-        service: "Mobile app development",
-        priceInNaira: "",
-        priceInUsd: "$800+",
-        description: "High-quality mobile applications with smooth performance and scalable architecture.",
-        include: ["Android and IOS apps", "Cross-platform development", "Responsive UI", "Lightweight, scalable builds"],
-        isMostPopular: true
-    },
-    {
-        service: "Backend development",
-        priceInNaira: "",
-        priceInUsd: "$450+",
-        description: "Robust, secure, and scalable backend systems engineered to power modern web and mobile applications with high performance and reliability.",
-        include: [
-            "REST & GraphQL APIs",
-            "SQL & NoSQL databases",
-            "Auth & access control",
-            "Server logic & integrations",
-            "Scalable architecture",
-            "Performance & security optimization"
-        ],
-        isMostPopular: false
-    },
-    {
-        service: "Branding and UI/UX",
-        priceInNaira: "",
-        priceInUsd: "$150+",
-        description: "For logos, brand identity, and user-friendly digital designs.",
-        include: ["Brand Identity designs", "Logo & style guide", "User interface design", "Wireframing & prototyping", "Design system creation"],
-        isMostPopular: false
-    },
-]
+const homeServices = [
+  {
+    service: "Web Development",
+    description: "Modern websites and web applications built for performance, scalability, and cutting-edge technologies.",
+    subServices: [
+      "3D Interactive Websites",
+      "Progressive Web Apps (PWA)",
+      "Single Page Applications (SPA)",
+            "Web3 Websites",
+      "E-commerce Platforms",
+      "Custom CMS Development",
+      "Performance & SEO Optimization"
+    ],
+    isMostPopular: false
+  },
+  {
+    service: "Mobile App Development",
+    description: "High-quality mobile applications with smooth performance and scalable architecture.",
+    subServices: [
+      "Android Apps",
+      "iOS Apps",
+      "Cross-platform Apps (Flutter/React Native)",
+      "Augmented Reality (AR) Apps",
+      "Mobile Game Development",
+      "UI/UX Optimized Apps",
+      "App Store Deployment & Maintenance"
+    ],
+    isMostPopular: true
+  },
+  {
+    service: "Backend Development",
+    description: "Robust, secure, and scalable backend systems for modern web and mobile applications.",
+    subServices: [
+      "REST & GraphQL APIs",
+      "Microservices Architecture",
+      "SQL & NoSQL Databases",
+      "Authentication & Authorization Systems",
+      "Cloud Integration & Serverless",
+      "Realtime Systems (WebSockets, Push)",
+      "Performance & Security Optimization"
+    ],
+    isMostPopular: false
+  },
+  {
+    service: "Branding & UI/UX",
+    description: "Creative branding solutions and user-focused digital design.",
+    subServices: [
+      "Brand Identity & Strategy",
+      "Logo & Style Guides",
+      "User Interface (UI) Design",
+      "User Experience (UX) Prototyping",
+      "Motion Graphics & Animations",
+      "Design System Creation",
+      "Interactive Mockups & Wireframing"
+    ],
+    isMostPopular: false
+  },
+];
+
 
 const faqs = [
     {
@@ -342,4 +360,4 @@ const footersLinks = [
     // },
 ]
 
-export { navDatas, servicesData, trustedCompany, process, projects, homePricing, faqs, testimonials, footersLinks };
+export { navDatas, servicesData, trustedCompany, process, projects, homeServices, faqs, testimonials, footersLinks };

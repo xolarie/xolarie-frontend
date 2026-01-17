@@ -3,6 +3,7 @@ import { faqs } from "../../constants";
 import { SectionWrapper } from "../../hoc";
 import support from "/images/support.png";
 import { useState } from "react";
+import { GoDash } from "react-icons/go";
 
 const Faqs = () => {
   const [openAnswer, setOpenAnswer] = useState(null);
@@ -43,8 +44,8 @@ const Faqs = () => {
               <p className="w-[80vw] text-left text-[#242424]">
                 {item.question}
               </p>
-              <span className="rounded-full bg-[#EEEEEE] p-2">
-                <FaPlus />
+              <span className="rounded-full bg-[#EEEEEE] p-2">{openAnswer === i ? <GoDash /> :  <FaPlus />}
+               
               </span>
             </button>
             <p
