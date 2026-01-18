@@ -1,4 +1,3 @@
-// import logo from "/images/Logo.png";
 import { navDatas } from "../constants";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -14,7 +13,6 @@ const Header = () => {
     <div className="z-50 w-[100vw] h-16 px-24 py-10 flex flex-row items-center fixed bg-white md:px-14 lg:px-16 xl:px-20 2xl:px-24">
 <div className="relative flex justify-center items-center h-20">
         <Link to="/" className="flex items-center justify-center gap-2">
-        {/* <img src={logo} alt="" className="h-4" /> */}
           <h1 className="text-transparent  bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079] font-semibold">Xolarie</h1>
         </Link>
 </div>
