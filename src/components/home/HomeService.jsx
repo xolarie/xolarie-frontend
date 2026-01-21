@@ -16,7 +16,7 @@ const HomeService = () => {
         Our expertise covers a wide range of modern and innovative solutions for your project needs
       </p>
 
-      <ul className="flex flex-col md:flex-row flex-wrap justify-center gap-6">
+      <ul className="flex flex-col md:flex-row flex-wrap justify-center gap-6 md:gap-2">
         {homeServices.map((item, i) => (
           <li key={i} className="relative flex justify-center">
             {item.isMostPopular && (
@@ -25,7 +25,7 @@ const HomeService = () => {
               </h1>
             )}
             <div
-              className={`flex flex-col h-[526px] w-[312px] rounded-2xl border my-8 shadow-2xl p-6 md:h-[370px] md:w-[22vw] md:mx-1 md:p-3 xl:w-[18vw] xl:mx-3 xl:h-[390px] ${
+              className={`flex flex-col h-[526px] w-[312px] rounded-2xl border my-8 shadow-2xl p-6 md:h-[450px] md:w-[20vw] lg:h-[380px] md:p-3 xl:w-[18vw] xl:mx-3 xl:h-[390px] ${
                 item.isMostPopular
                   ? "bg-gradient-to-br from-[#2659FB] via-[#8D21FB] to-[#E1007F] text-white"
                   : ""
