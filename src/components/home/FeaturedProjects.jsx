@@ -12,6 +12,7 @@ const FeaturedProjects = () => {
 
   const [activeIndex, setActiveIndex] = useState(0);
 
+  console.log()
   const startAutoScroll = () => {
     if (intervalRef.current) return;
 
