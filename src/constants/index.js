@@ -360,4 +360,44 @@ const footersLinks = [
     // },
 ]
 
-export { navDatas, servicesData, trustedCompany, process, projects, homeServices, faqs, testimonials, footersLinks };
+const aboutContents = [
+    {
+        title: "Who We Are",
+        content: ["Xolarie is a collective of engineers, designers, and problem-solvers driven by a shared passion for technology. We think deeply about how systems work, how users interact with them, and how technology can be applied thoughtfully to create lasting value. ",
+        "While we collaborate with businesses and organizations, our identity is rooted in building technology that stands on its own well-architected, user-focused, and future-ready."]
+    },
+    {
+        title: "What We Do",
+        content: ["We design, build, and evolve technology across multiple domains.",
+            "From scalable software and digital products to internal systems. ",
+            "Our work blends thoughtful UI UX with strong product thinking. ",
+            "We focus on intelligent integrations, performance, and security.Every build is approached with care, clarity, and discipline."]
+    },
+    {
+        title: "Our Mission",
+        content: ["Our mission is to create purposeful, scalable, and accessible technology.",
+            "We design solutions that help people build, interact, and grow in a digital world. ",
+            "Our work focuses on clarity, usability, and long-term value.",
+            "We build systems that solve real problems today while remaining flexible for tomorrow. Technology, to us, is a tool for progress, not complexity."]
+    },
+    {
+        title: "Our Vision",
+        content: ["Our vision is to build Xolarie into a globally respected technology brand.",
+            "We aim to be known for smart, reliable, and forward-looking digital solutions. ",
+            "We believe technology should be thoughtfully designed and responsibly built. ",
+            "Our goal is to use technology as a tool for progress across industries and communities."]
+    },
+    {
+        title: "Our Approach",
+        content: ["Our approach is grounded in engineering discipline, design thinking, and collaboration. We take time to deeply understand the problem before building solutions. ",
+            "Our process prioritizes intentional planning, system thinking, and user-centered design.We write clean, scalable, and maintainable code that supports long-term growth. ",
+            "This allows us to build technology that lasts, scales, and evolves with ease."]
+    },
+    {
+        title: "Why Xolarie",
+        content: ["Xolarie is more than a development studio. We are a technology partner with a strong product mindset. ",
+        "Our work is guided by deep systems thinking and high engineering and design standards. We build scalable, maintainable solutions with long-term value in mind.","Every decision is driven by how the technology will perform, grow, and endure."]
+    },
+]
+
+export { navDatas, servicesData, trustedCompany, process, projects, homeServices, faqs, testimonials, footersLinks, aboutContents };
