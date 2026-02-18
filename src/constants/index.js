@@ -400,4 +400,43 @@ const aboutContents = [
     },
 ]
 
-export { navDatas, servicesData, trustedCompany, process, projects, homeServices, faqs, testimonials, footersLinks, aboutContents };
+const TeamMembers = [
+    {
+        name: "Salman Khan",
+        role: "Founder and CEO of Khan Academy",
+        image: "/images/aboutImg.png",
+        description: "Salman Amin Khan (born 11 October 1976), known as Sal Khan, is a Bangladeshi-American educator and the founder of Khan Academy"
+    },
+    {
+        name: "Salman Khan",
+        role: "Founder and CEO of Khan Academy",
+        image: "/images/aboutImg.png",
+        description: "Salman Amin Khan (born 11 October 1976), known as Sal Khan, is a Bangladeshi-American educator and the founder of Khan Academy"
+    },
+    {
+        name: "Salman Khan",
+        role: "Founder and CEO of Khan Academy",
+        image: "/images/aboutImg.png",
+        description: "Salman Amin Khan (born 11 October 1976), known as Sal Khan, is a Bangladeshi-American educator and the founder of Khan Academy"
+    },
+    {
+        name: "Salman Khan",
+        role: "Founder and CEO of Khan Academy",
+        image: "/images/aboutImg.png",
+        description: "Salman Amin Khan (born 11 October 1976), known as Sal Khan, is a Bangladeshi-American educator and the founder of Khan Academy"
+    },
+    {
+        name: "Salman Khan",
+        role: "Founder and CEO of Khan Academy",
+        image: "/images/aboutImg.png",
+        description: "Salman Amin Khan (born 11 October 1976), known as Sal Khan, is a Bangladeshi-American educator and the founder of Khan Academy"
+    },
+    {
+        name: "Salman Khan",
+        role: "Founder and CEO of Khan Academy",
+        image: "/images/aboutImg.png",
+        description: "Salman Amin Khan (born 11 October 1976), known as Sal Khan, is a Bangladeshi-American educator and the founder of Khan Academy"
+    },
+]
+
+export { navDatas, servicesData, trustedCompany, process, projects, homeServices, faqs, testimonials, footersLinks, aboutContents, TeamMembers };
