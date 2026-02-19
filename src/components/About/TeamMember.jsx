@@ -19,15 +19,15 @@ const TeamMember = () => {
         Product minded builders shaping every solution
       </p>
       <div>
-        <ul className="flex flex-col gap-12 w-full mb-16">
+        <ul className="flex flex-col gap-12 w-full mb-16 md:grid md:grid-cols-3 md:gap-3">
           {TeamMembers.map((member, i) => (
             <li key={i} className="flex flex-col items-center justify-center shadow-lg rounded-xl">
               <img src={member.image} alt="" className="rounded-t-xl" />
               <div className="px-4">
-                <h4 className="font-bold text-3xl mt-4">{member.name}</h4>
-                <h6 className="my-4 text-[#3B3F5C]">{member.role}</h6>
-                <p className="text-[#3B3F5C]">{member.description}</p>
-                <button className="my-4  w-full py-4 rounded-xl text-white bg-gradient-to-r from-[#931DFA] to-[#225BFB]">
+                <h4 className="font-bold text-3xl mt-4 md:text-xl">{member.name}</h4>
+                <h6 className="my-4 text-[#3B3F5C] md:text-[10px]">{member.role}</h6>
+                <p className="text-[#3B3F5C] md:text-[12px]">{member.description}</p>
+                <button className="my-4  w-full py-4 rounded-xl text-white bg-gradient-to-r from-[#931DFA] to-[#225BFB] md:py-2 md:text-[10px]">
                   Learn more
                 </button>
               </div>
