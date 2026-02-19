@@ -9,27 +9,27 @@ const About = () => {
           <span className="h-4 w-4 shadow-md border-white border-4 bg-gradient-to-br from-[#4354FB] via-[#8E20FA] to-[#DD0385] rounded-full"></span>
           <p className="text-[14px] md:text-[10px] text-nowrap">About Xolarie</p>
         </div>
-        <div className="md:grid md:grid-cols-2 gap-5">
+        <div className="md:grid md:grid-cols-2 gap-5 xl:mb-5">
           <div>
-            <h1 className="text-4xl text-center my-2 md:text-start md:font-semibold">Why we’re the best digital studio <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4155FB] via-[#9C1CF1] to-[#DF0282]">in the market</span></h1>
+            <h1 className="text-4xl text-center my-2 md:text-start md:font-semibold xl:text-5xl">Why we’re the best digital studio <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#4155FB] via-[#9C1CF1] to-[#DF0282]">in the market</span></h1>
             <br />
           </div>
           <div>
-            <p className="text-center text-[#4F4F4F] text-lg mb-10 md:text-[12px] md:leading-[15px] md:text-start">Xolarie is a technology-driven company focused on designing and building scalable software, intelligent systems, and meaningful digital experiences. We create technology that solves real-world problems, empowers people, and adapts as the digital world evolves. 
+            <p className="text-center text-[#4F4F4F] text-lg mb-10 md:text-[12px] md:leading-[15px] md:text-start xl:text-[16px] xl:leading-[20px]">Xolarie is a technology-driven company focused on designing and building scalable software, intelligent systems, and meaningful digital experiences. We create technology that solves real-world problems, empowers people, and adapts as the digital world evolves. 
               <br />
               <br />
               Our work goes beyond building for immediate needs. We focus on creating systems, platforms, and products that are reliable, flexible, and designed for long-term impact.</p>
           </div>
         </div>
         <div>
-          <ul className="md:grid md:grid-cols-3 md:gap-3">
+          <ul className="md:grid md:grid-cols-3 md:gap-3 2xl:gap-6">
             {
               aboutContents.map((item, index) => (
-                <li key={index} className="my-8 p-6 border-[#9E1BF175] border-[0.3px] rounded-xl bg-gradient-to-b shadow-lg from-[#4255FB0D] via-[#9E1BF10D] to-[#DF02810D] flex flex-col md:p-3">
+                <li key={index} className="my-8 p-6 border-[#9E1BF175] border-[0.3px] rounded-xl bg-gradient-to-b shadow-lg from-[#4255FB0D] via-[#9E1BF10D] to-[#DF02810D] flex flex-col md:p-3 xl:my-2">
                   <h1 className="my-4 text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079] w-40 md:text-xl ">{item.title}</h1>
                   {
                     item.content.map((content, i)=> (
-                      <p key={i} className="text-[#4F4F4F] md:text-[10px]">{content}</p>
+                      <p key={i} className="text-[#4F4F4F] md:text-[10px] xl:text-[14px]">{content}</p>
                     ))
                   }
                   <br />
