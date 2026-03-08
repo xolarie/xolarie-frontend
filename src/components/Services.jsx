@@ -5,6 +5,7 @@ const Services = ({ contents = {} }) => {
   return (
     <div className="mt-28">
       {contents.h1}
+      <p>{contents.description}</p>
     </div>
   );
 };

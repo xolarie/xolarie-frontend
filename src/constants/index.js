@@ -440,7 +440,14 @@ const TeamMembers = [
 ]
 
 const webDevelopmentContent = {
-    h1: "High Performance Web Solutions Built to scale"
+    h1: "High Performance Web Solutions Built to scale",
+    description : "We design and develop secure, fast, and future-ready websites and web applications engineered for long-term business growth."
 }
 
-export { navDatas, servicesData, trustedCompany, process, projects, homeServices, faqs, testimonials, footersLinks, aboutContents, TeamMembers, webDevelopmentContent };
+const appDevelopmentContents = {
+    h1: "High performance app solution",
+    description : "cbjvaug;oefiuhacub"
+
+}
+
+export { navDatas, servicesData, trustedCompany, process, projects, homeServices, faqs, testimonials, footersLinks, aboutContents, TeamMembers, webDevelopmentContent, appDevelopmentContents };
