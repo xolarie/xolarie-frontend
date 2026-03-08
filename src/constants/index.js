@@ -439,4 +439,8 @@ const TeamMembers = [
     },
 ]
 
-export { navDatas, servicesData, trustedCompany, process, projects, homeServices, faqs, testimonials, footersLinks, aboutContents, TeamMembers };
+const webDevelopmentContent = {
+    h1: "High Performance Web Solutions Built to scale"
+}
+
+export { navDatas, servicesData, trustedCompany, process, projects, homeServices, faqs, testimonials, footersLinks, aboutContents, TeamMembers, webDevelopmentContent };
