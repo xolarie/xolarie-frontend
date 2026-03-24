@@ -440,12 +440,117 @@ const TeamMembers = [
 ]
 
 const webDevelopmentContent = {
-    h1: "High Performance Web Solutions Built to scale",
-    description : "We design and develop secure, fast, and future-ready websites and web applications engineered for long-term business growth."
+    h_span1: "High Performance",
+    h_span2: "Web Solutions",
+    h_span3: "Built to scale",
+    h_desc : "We design and develop secure, fast, and future-ready websites and web applications engineered for long-term business growth.",
+    h_list : ["Built for scalability and performance", "Clean architecture and secure infrastructure", "Optimized for conversions and business impact"],
+    h_from : "web development",
+    h_img: "/images/web_dev_img.png",
+
+    sec_2_title : "What We Build",
+    sec_2_dec : "Tailored web solutions for startups, enterprises, and growing businesses.",
+    sec_2_list : [
+                {
+            title : "Business & Corporate websites",
+            desc : "Professional web presence designed to build credibility and drive leads for your brand.",
+            img : "/images/web.png"
+        },
+        {
+            title : "3D Interactive Websites",
+            desc : "Immersive web experiences with 3D elements that captivate and engage your audience.",
+            img : "/images/3d_web.png"
+        },
+        {
+            title : "Progressive Web Apps (PWA)",
+            desc : "Immersive web experiences with 3D elements that captivate and engage your audience.",
+            img : "/images/web2.png"
+        },
+        {
+            title : "Single Page Applications (SPA)",
+            desc : "Lightning-fast, dynamic web apps with seamless user interactions and smooth navigation.",
+            img : "/images/3d_web2.png"
+        },
+        {
+            title : "Web3 Websites",
+            desc : "Blockchain-integrated platforms for NFTs, DeFi, and decentralized applications.",
+            img : "/images/web3.png"
+        },
+        {
+            title : "E-commerce Platforms",
+            desc : "Conversion-optimized online stores with secure payments and inventory management.",
+            img : "/images/3d_web3.png"
+        },
+        {
+            title : "Custom CMS Development",
+            desc : "Tailored content management systems that empower your team to manage content easily.",
+            img : "/images/web4.png"
+        },
+        {
+            title : "Performance & SEO Optimization",
+            desc : "Technical optimization to boost speed, search rankings, and overall user experience.",
+            img : "/images/3d_web4.png"
+        },
+    ],
+
+    sec_3_span1 : "Our Proven",
+    sec_3_span2 : "Development",
+    sec_3_span3 : "Process",
+    sec_3_desc : "Structured. Transparent. Built for results.",
+    sec_3_list : [
+        {
+            title : "Requirement Analysis & Technical Planning",
+            description : "We deeply understand your goals, audience, and technical needs to create a strategic roadmap aligned with your business objectives.",
+        },
+        {
+            title : "UI/UX Design & Prototyping",
+            description : "Our designers craft intuitive, conversion-focused interfaces with interactive prototypes for your feedback and validation.",
+        },
+        {
+            title : "Clean, Modular Development",
+            description : "We build scalable, maintainable code using modern frameworks and best practices for long-term growth and flexibility.",
+        },
+        {
+            title : "Rigorous Testing & Optimization",
+            description : "Comprehensive quality assurance across devices and browsers ensures flawless performance before launch.",
+        },
+        {
+            title : "Deployment & Ongoing Support",
+            description : "Seamless launch with continuous monitoring, updates, and technical support to keep your platform running smoothly.",
+        },
+    ],
+
+    sec_4_span1 : "Why businesses choose",
+    sec_4_span2 : "Xolarie",
+    sec_4_desc : "We combine strategy, design, and execution to help businesses grow faster and smarter.",
+    sec_4_list : [
+        {
+            title : "Engineered for Scalability",
+            description : "Built to grow with your business, handling increased traffic and features without performance degradation.",
+            icon : "/images/arrow.png",
+        },
+        {
+            title : "Performance First Architecture",
+            description : "Lightning-fast load times and optimal user experience through cutting-edge optimization techniques.",
+            icon : "/images/bolt2.png",
+        },
+        {
+            title : "Security Built in",
+            description : "Enterprise-grade security measures protect your data and users from the ground up.",
+            icon : "/images/shield.png",
+        },
+        {
+            title : "Long term growth focus",
+            description : "Clean, documented code and modern tech stack ensure easy maintenance and future enhancements.",
+            icon : "/images/code2.png",
+        },
+    ]
+
+    
 }
 
 const appDevelopmentContents = {
-    h1: "High performance app solution",
+    h_span1: "High performance app solution",
     description : "cbjvaug;oefiuhacub"
 
 }
