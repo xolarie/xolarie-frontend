@@ -439,6 +439,7 @@ const TeamMembers = [
     },
 ]
 
+
 const webDevelopmentContent = {
     h_span1: "High Performance",
     h_span2: "Web Solutions",
@@ -448,8 +449,9 @@ const webDevelopmentContent = {
     h_from : "web development",
     h_img: "/images/web_dev_img.png",
 
-    sec_2_title : "What We Build",
-    sec_2_dec : "Tailored web solutions for startups, enterprises, and growing businesses.",
+    sec_2_span1 : "What We",
+    sec_2_span2 : "Build",
+    sec_2_desc : "Tailored web solutions for startups, enterprises, and growing businesses.",
     sec_2_list : [
                 {
             title : "Business & Corporate websites",
