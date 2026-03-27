@@ -1,45 +1,61 @@
 /* eslint-disable react/prop-types */
+import { FaArrowRight } from "react-icons/fa";
 import { SectionWrapper } from "../hoc";
+import checkMark from "/images/checkmark.png"
 
 const Services = ({ contents = {} }) => {
   return (
-    <div className="mt-28">
+    <div className="mt-8 flex flex-col gap-y-10">
       <section>
         <div>
           <div>
-            <h1>
-              <span>{contents.h_span1}</span> <span>{contents.h_span2}</span>{" "}
+            <h1 className="font-inter text-center text-[32px] mt-4 md:text-start xl:text-5xl 2xl:text-6xl">
+              <span>{contents.h_span1}</span>
+              <br />{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079]">
+                {contents.h_span2}
+              </span>{" "}
               <span>{contents.h_span3}</span>
             </h1>
           </div>
-          <p>{contents.h_desc}</p>
-          <ul>
+          <p className="text-center font-iner text-[#4F4F4F] text-lg md:text-start md:text-[10px] xl:text-[17px] lg:my-5">
+            {contents.h_desc}
+          </p>
+          <ul className="flex  flex-col  my-10 gap-y-4">
             {contents.h_list.map((item, index) => (
-              <li key={index} className="flex">
-                <img src="" alt="check image" />
-                <span>{item}</span>
+              <li key={index} className="flex gap-y-4">
+                <img src={checkMark} alt="check image" className="h-8 mr-3" />
+                <span className="text-sm text-[#4F4F4F]">{item}</span>
               </li>
             ))}
           </ul>
-          <div>
-            <button>Start Your Web Project</button>{" "}
-            <button>Request a custom qoute</button>
+          <div className="flex-col gap-3 mt-5 flex md:items-start w-full md:flex-row">
+            <button className="w-full justify-center bg-gradient-to-r from-[#225BFB] to-[#931DFA] p-2 py-4 rounded-xl text-white flex flex-row items-center gap-2 hover:scale-110 duration-300 md:w-32 md:rounded-lg md:h-12">
+              <p className="text-[16px] md:text-[14px]">Start Projects </p>
+              <FaArrowRight />
+            </button>
+            <button className="w-full py-4 justify-center border-black border-[0.5px] p-2 rounded-xl flex flex-row items-center gap-2 hover:scale-110 duration-300 md:w-32 md:rounded-lg md:h-12">
+              <p className="text-[16px] md:text-[14px] md:text-nowrap">
+                View Our Projects
+              </p>
+              <FaArrowRight />
+            </button>
           </div>
         </div>
-        <img src="" alt="Hero image" className="hidden" />
+        <img src={contents.h_img} alt="web image"  />
       </section>
-      <section>
-        <h1>
-          <span>{contents.sec_2_span1} </span>{" "}
-          <span>{contents.sec_2_span2} </span>
+      <section className="flex flex-col gap-y-4">
+        <h1 className="font-inter text-center text-[32px] mt-4 md:text-start xl:text-5xl 2xl:text-6xl">
+          <span >{contents.sec_2_span1} </span>{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079]">{contents.sec_2_span2} </span>
         </h1>
-        <p>{contents.sec_2_desc}</p>
-        <ul>
+        <p className="text-center font-iner text-[#4F4F4F] text-lg md:text-start md:text-[10px] xl:text-[17px] lg:my-5">{contents.sec_2_desc}</p>
+        <ul className="flex flex-col gap-5 mt-12 md:grid md:grid-cols-3 md:place-items-center md:w-full">
           {contents.sec_2_list.map((item, index) => (
-            <li key={index}>
-              <img src={item.img} alt="icon" />
-              <h3>{item.title}</h3>
-              <p>{item.desc}</p>
+            <li key={index} className="h-[200px] w-full flex flex-col border rounded-xl shadow-2xl shadow-[#48484826] p-4 hover:scale-105 duration-300 xl:px-6 md:w-auto md:h-[220px]">
+              <img src={item.img} alt="icon" className="h-20 w-20"/>
+              <h3 className="font-semibold my-2 md:my-5">{item.title}</h3>
+              <p className="text-[12px] text-[#4F4F4F] md:text-[8px] lg:text-[10px] xl:text-[12px]">{item.desc}</p>
             </li>
           ))}
         </ul>
@@ -52,14 +68,12 @@ const Services = ({ contents = {} }) => {
         </h1>
         <p>{contents.sec_3_desc}</p>
         <ul>
-          {
-            contents.sec_3_list.map((item, index) => (
-              <li key={index}>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </li>
-            ))
-          }
+          {contents.sec_3_list.map((item, index) => (
+            <li key={index}>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </li>
+          ))}
         </ul>
       </section>
     </div>

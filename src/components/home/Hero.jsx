@@ -74,6 +74,7 @@ const Hero = () => {
         <div className="flex flex-col items-center md:flex-row">
           <div className="flex flex-col items-center md:items-start md:w-[40vw] md:mr-5">
             <div>
+            
               <motion.h1
                 variants={fadeUp}
                 className="font-inter text-center text-[32px] mt-4 md:text-start xl:text-5xl 2xl:text-6xl"
@@ -85,7 +86,6 @@ const Hero = () => {
                 </span>{" "}
                 that help brands grow
               </motion.h1>
-
               <motion.p
                 variants={fadeUp}
                 className="text-center font-iner text-[#4F4F4F] text-[12px] md:text-start md:text-[10px] xl:text-[17px] lg:my-5"
