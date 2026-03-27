@@ -439,6 +439,29 @@ const TeamMembers = [
     },
 ]
 
+const whyChooseList = [
+    {
+        title : "Engineered for Scalability",
+        desc : "Built to grow with your business, handling increased traffic and features without performance degradation.",
+        icon : "/images/arrow.png",
+    },
+    {
+        title : "Performance First Architecture",
+        desc : "Lightning-fast load times and optimal user experience through cutting-edge optimization techniques.",
+        icon : "/images/Vector.png",
+    },
+    {
+        title : "Security Built in",
+        desc : "Enterprise-grade security measures protect your data and users from the ground up.",
+        icon : "/images/security.png",
+    },
+    {
+        title : "Long term growth focus",
+        desc : "Clean, documented code and modern tech stack ensure easy maintenance and future enhancements.",
+        icon : "/images/source-code.png",
+    },
+]
+
 
 const webDevelopmentContent = {
     h_span1: "High Performance",
@@ -522,32 +545,6 @@ const webDevelopmentContent = {
         },
     ],
 
-    sec_4_span1 : "Why businesses choose",
-    sec_4_span2 : "Xolarie",
-    sec_4_desc : "We combine strategy, design, and execution to help businesses grow faster and smarter.",
-    sec_4_list : [
-        {
-            title : "Engineered for Scalability",
-            description : "Built to grow with your business, handling increased traffic and features without performance degradation.",
-            icon : "/images/arrow.png",
-        },
-        {
-            title : "Performance First Architecture",
-            description : "Lightning-fast load times and optimal user experience through cutting-edge optimization techniques.",
-            icon : "/images/bolt2.png",
-        },
-        {
-            title : "Security Built in",
-            description : "Enterprise-grade security measures protect your data and users from the ground up.",
-            icon : "/images/shield.png",
-        },
-        {
-            title : "Long term growth focus",
-            description : "Clean, documented code and modern tech stack ensure easy maintenance and future enhancements.",
-            icon : "/images/code2.png",
-        },
-    ]
-
     
 }
 
@@ -557,4 +554,6 @@ const appDevelopmentContents = {
 
 }
 
-export { navDatas, servicesData, trustedCompany, process, projects, homeServices, faqs, testimonials, footersLinks, aboutContents, TeamMembers, webDevelopmentContent, appDevelopmentContents };
+
+
+export { navDatas, servicesData, trustedCompany, process, projects, homeServices, faqs, testimonials, footersLinks, aboutContents, TeamMembers, whyChooseList, webDevelopmentContent, appDevelopmentContents };
