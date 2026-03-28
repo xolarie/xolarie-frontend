@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { Animations, AppDev, BackendDev, GamingDev, ProjectsMgt, RoboticsAndAi, UiuxDesign, WebDev } from "./Services";
+import ReadyToBuild from "../../components/ReadyToBuild";
 
 const servicesList = {
   "web-development": WebDev,
@@ -24,6 +25,7 @@ const Services = () => {
   return (
     <div>
       <ServiceComponent />
+      <ReadyToBuild />
     </div>
   );
 };
