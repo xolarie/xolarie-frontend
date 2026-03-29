@@ -7,13 +7,13 @@ const WhyChoose = () => {
   return (
     <>
     <div className="flex flex-col items-center justify-center">
-      <h1 className="text-3xl text-center w-64">
+      <h1 className="text-3xl text-center w-64 md:text-2xl md:w-full">
         Why businesses choose{" "}
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#3D57FB] via-[#9E1BF1] to-[#E40079]">
           Xolarie
         </span>
       </h1>
-      <p className="text-center my-6 w-72 text-[#4F4F4F]">
+      <p className="text-center my-6 w-72 text-[#4F4F4F] md:text-sm md:w-full">
         We combine strategy, design, and execution to help businesses grow
         faster and smarter.
       </p>
@@ -35,12 +35,12 @@ const WhyChoose = () => {
       </ul>
       <div className="flex flex-col  items-center justify-center">
         <h1 className="text-3xl text-center">
-          Need Something <br />
+          Need Something <br className="md:hidden"/>
           <span className="bg-gradient-to-r text-transparent bg-clip-text from-[#3D57FB] via-[#9E1BF1] to-[#E40079]">
             Unique
           </span>
         </h1>
-        <p className="text-[#4F4F4F] text-center my-6">
+        <p className="text-[#4F4F4F] text-center my-6 md:text-sm">
           If your project requires advanced integrations, complex systems, or
           specialized features, we design custom-built web solutions tailored
           exactly to your needs.
