@@ -7,7 +7,7 @@ import checkMark from "/images/checkmark.png";
 const Services = ({ contents = {} }) => {
   return (
     <div className="mt-8 flex flex-col gap-y-10 overflow-hidden">
-      <section className="md:flex flex-row w-[50vw]">
+      <section className="md:flex flex-row md:w-[50vw]">
         <div>
           <div>
             <h1 className="font-inter text-center text-[32px] mt-4 md:text-start xl:text-5xl 2xl:text-6xl">
