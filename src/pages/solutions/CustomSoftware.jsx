@@ -1,7 +1,11 @@
+import { ServicesWrapper } from "../../components/Services";
+import { customSoftwareSolutionsContent } from "../../constants";
+
 const CustomSoftware = () => {
   return (
     <div className="">
-    </div>
+      <ServicesWrapper contents={customSoftwareSolutionsContent} />
+  </div>
   );
 };
 

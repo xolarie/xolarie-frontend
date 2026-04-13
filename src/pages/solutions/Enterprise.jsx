@@ -1,9 +1,11 @@
+import { ServicesWrapper } from "../../components/Services";
+import { enterpriseSystemIntegrationContent } from "../../constants";
 
 const Enterprise = () => {
   return (
     <div className="">
-
-    </div>
+      <ServicesWrapper contents={enterpriseSystemIntegrationContent} />
+  </div>
   );
 };
 
