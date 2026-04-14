@@ -567,39 +567,44 @@ const appDevelopmentContents = {
     sec_2_list: [
         {
             title: "Android App Development",
-            desc: "High-quality Android applications designed for performance, reliability, and built to perform smoothly across a wide range of devices",
+            desc: "High-performance Android applications engineered for reliability, scalability, and seamless operation across diverse devices",
             img: ""
         },
         {
             title: "iOS App Development",
-            desc: "Smooth, secure iOS applications built to meet modern design, performance standards and user satisfaction",
+            desc: "Refined iOS applications built to meet Apple’s ecosystem standards, delivering smooth performance and exceptional user experience",
             img: ""
         },
         {
             title: "Cross-Platform Applications",
-            desc: "Apps built to run seamlessly on both Android and iOS using a single, efficient codebase",
+            desc: "Efficient, scalable apps developed from a unified codebase to ensure consistent performance across Android and iOS platforms",
             img: ""
         },
         {
             title: "Augmented Reality (AR) Apps",
-            desc: "Interactive applications that enhance user engagement through immersive digital experiences",
+            desc: "Immersive applications that blend digital elements with real-world environments to create engaging user experiences",
             img: ""
         },
         {
             title: "Mobile Game Development",
-            desc: "Engaging mobile games with smooth performance, intuitive controls, and strong user retention ",
+            desc: "Performance-driven mobile games designed with intuitive mechanics, engaging gameplay, and optimized rendering",
             img: ""
         },
         {
             title: "UI/UX Optimized Apps",
-            desc: "Apps built with clear navigation and intuitive interactions for better usability",
+            desc: "Applications crafted with intuitive interfaces, structured user flows, and interaction-focused design principles",
             img: ""
         },
         {
             title: "App Store Deployment & Maintenance",
-            desc: "End-to-end support for launching, updating, and maintaining your app across app stores",
+            desc: "Complete lifecycle support including deployment, compliance handling, updates, and long-term application maintenance",
             img: ""
         },
+        {
+            title: "Backend & API Integration",
+            desc: "Robust backend systems and API integrations that power your app with secure data handling, scalability, and real-time functionality",
+            img: ""
+        }
     ],
 
     sec_3_span1: "HOW WE",
@@ -650,39 +655,44 @@ const backendDevelopmentContents = {
     sec_2_list: [
         {
             title: "API Development & Integration",
-            desc: "Secure and efficient systems that allow your applications and platforms to communicate smoothly and reliably.",
+            desc: "Secure, scalable APIs that enable seamless communication between applications, services, and third-party platforms",
             img: ""
         },
         {
-            title: "Backend System architecture",
-            desc: "Well-structured systems designed to handle logic, processes, and data flow efficiently as your product grows.",
+            title: "Backend System Architecture",
+            desc: "Robust system architectures designed to handle complex business logic, data flow, and long-term scalability",
             img: ""
         },
         {
             title: "Database Design & Management",
-            desc: "Optimized data systems built for speed, reliability, and efficient storage and retrieval",
+            desc: "High-performance data systems optimized for efficient storage, fast retrieval, and long-term reliability",
             img: ""
         },
         {
             title: "Authentication & Authorization Systems",
-            desc: "Secure user access systems that protect data and ensure controlled permissions.",
+            desc: "Advanced access control systems ensuring secure user authentication, data protection, and role-based permissions",
             img: ""
         },
         {
             title: "Cloud Integration & Server Infrastructure",
-            desc: "Cloud-based systems designed for availability, flexibility, and long-term scalability.",
+            desc: "Scalable cloud environments and infrastructure built for high availability, flexibility, and performance",
             img: ""
         },
         {
-            title: "Realtime Systems",
-            desc: "Backend systems that support live updates, messaging, and real-time interactions. ",
+            title: "Real-Time Systems",
+            desc: "Event-driven architectures supporting live updates, messaging, streaming, and real-time user interactions",
             img: ""
         },
         {
             title: "Performance & Security Optimization",
-            desc: "Improvements that enhance system speed, stability, and protection against potential vulnerabilities",
+            desc: "System-level optimizations that improve speed, resilience, and protection against vulnerabilities and attacks",
             img: ""
         },
+        {
+            title: "Monitoring, Logging & DevOps",
+            desc: "Integrated monitoring, logging, and deployment pipelines to ensure system reliability, visibility, and continuous delivery",
+            img: ""
+        }
     ],
 
     sec_3_span1: "HOW WE",
@@ -732,29 +742,44 @@ const uiuxDesignContent = {
     sec_2_list: [
         {
             title: "Web & App UI Design",
-            desc: "Clean and modern interfaces designed for usability, clarity, and engagement.",
+            desc: "Clean, modern interfaces crafted for clarity, usability, and strong visual engagement across digital platforms",
             img: "/images/ui1.png"
         },
         {
             title: "User Experience (UX) Design",
-            desc: "Structured user journeys and flows that ensure smooth and intuitive interactions.",
+            desc: "Structured user flows and interaction models designed to deliver seamless and intuitive product experiences",
             img: "/images/ui2.png"
         },
         {
             title: "Wireframing & Prototyping",
-            desc: "Interactive prototypes that visualize product functionality before development.",
+            desc: "Interactive wireframes and prototypes that visualize functionality, structure, and user interaction before development",
             img: "/images/ui3.png"
         },
         {
             title: "Design Systems",
-            desc: "Consistent design frameworks that scale across your entire product ecosystem.",
+            desc: "Scalable design frameworks with reusable components to ensure consistency across your entire product ecosystem",
             img: "/images/ui4.png"
         },
         {
             title: "UX Research & Testing",
-            desc: "Data-driven insights and usability testing to refine user experience.",
+            desc: "Insight-driven research and usability testing to validate decisions and continuously improve user experience",
             img: "/images/ui5.png"
         },
+        {
+            title: "Mobile-First & Responsive Design",
+            desc: "Interfaces optimized for all screen sizes, ensuring consistent performance and usability across devices",
+            img: "/images/ui6.png"
+        },
+        {
+            title: "Interaction & Motion Design",
+            desc: "Thoughtful animations and micro-interactions that enhance usability, feedback, and overall product feel",
+            img: "/images/ui7.png"
+        },
+        {
+            title: "Product UI Optimization",
+            desc: "Continuous refinement of interfaces to improve usability, accessibility, and conversion performance",
+            img: "/images/ui8.png"
+        }
     ],
 
     sec_3_span1: "OUR DESIGN",
@@ -804,29 +829,44 @@ const gameDevelopmentContent = {
     sec_2_list: [
         {
             title: "Mobile Game Development",
-            desc: "High-performance mobile games with smooth controls and engaging mechanics.",
+            desc: "High-performance mobile games engineered for smooth controls, responsive gameplay, and long-term player retention",
             img: "/images/game1.png"
         },
         {
-            title: "3D & 2D Games",
-            desc: "Visually rich 2D and 3D games designed for immersive experiences.",
+            title: "2D & 3D Game Development",
+            desc: "Visually refined 2D and 3D games built with optimized rendering and immersive world design",
             img: "/images/game2.png"
         },
         {
-            title: "Multiplayer Games",
-            desc: "Real-time multiplayer systems with seamless online interactions.",
+            title: "Multiplayer Game Systems",
+            desc: "Scalable real-time multiplayer architectures enabling seamless online interactions and synchronization",
             img: "/images/game3.png"
         },
         {
             title: "Game UI/UX Design",
-            desc: "User-friendly interfaces that enhance gameplay experience.",
+            desc: "Intuitive game interfaces and interaction systems designed to enhance usability and player engagement",
             img: "/images/game4.png"
         },
         {
             title: "Game Optimization",
-            desc: "Performance tuning for smooth gameplay across devices.",
+            desc: "Advanced performance tuning to ensure stable frame rates and smooth gameplay across a wide range of devices",
             img: "/images/game5.png"
         },
+        {
+            title: "Game Physics & Mechanics",
+            desc: "Realistic and responsive physics systems that create engaging, dynamic gameplay experiences",
+            img: "/images/game6.png"
+        },
+        {
+            title: "Game Backend & Leaderboards",
+            desc: "Robust backend systems supporting player data, leaderboards, matchmaking, and progression tracking",
+            img: "/images/game7.png"
+        },
+        {
+            title: "AR/VR Game Development",
+            desc: "Immersive augmented and virtual reality game experiences designed for next-generation interaction and engagement",
+            img: "/images/game8.png"
+        }
     ],
 
     sec_3_span1: "HOW WE",
@@ -876,29 +916,44 @@ const animationContent = {
     sec_2_list: [
         {
             title: "2D Animation",
-            desc: "Clean and engaging 2D animations for storytelling and branding.",
+            desc: "High-quality 2D animations crafted for storytelling, branding, and engaging visual communication",
             img: "/images/anim1.png"
         },
         {
             title: "3D Animation",
-            desc: "Realistic and immersive 3D animations for advanced visual experiences.",
+            desc: "Realistic and visually immersive 3D animations built for advanced product and cinematic experiences",
             img: "/images/anim2.png"
         },
         {
             title: "Motion Graphics",
-            desc: "Dynamic visuals for marketing, presentations, and digital platforms.",
+            desc: "Dynamic motion visuals designed for marketing, presentations, and digital content platforms",
             img: "/images/anim3.png"
         },
         {
             title: "Product Animation",
-            desc: "Detailed animations showcasing product features and functionality.",
+            desc: "Precision-driven animations that highlight product features, functionality, and design details",
             img: "/images/anim4.png"
         },
         {
             title: "Explainer Videos",
-            desc: "Simplified animated videos to communicate complex ideas clearly.",
+            desc: "Structured animated content that simplifies complex concepts into clear and engaging narratives",
             img: "/images/anim5.png"
         },
+        {
+            title: "UI Animation & Microinteractions",
+            desc: "Refined interface animations that enhance usability, feedback, and overall user experience",
+            img: "/images/anim6.png"
+        },
+        {
+            title: "Character Animation",
+            desc: "Expressive character-driven animations designed for storytelling, branding, and digital content",
+            img: "/images/anim7.png"
+        },
+        {
+            title: "Visual Effects (VFX)",
+            desc: "Advanced visual effects that add realism, depth, and cinematic quality to digital productions",
+            img: "/images/anim8.png"
+        }
     ],
 
     sec_3_span1: "OUR",
@@ -948,29 +1003,44 @@ const aiRoboticsContent = {
     sec_2_list: [
         {
             title: "Machine Learning Systems",
-            desc: "AI models that learn from data to improve performance and predictions.",
+            desc: "Data-driven models engineered to learn, adapt, and deliver accurate predictions at scale",
             img: "/images/ai1.png"
         },
         {
             title: "Automation Systems",
-            desc: "Intelligent automation to streamline operations and reduce manual work.",
+            desc: "Intelligent automation pipelines that streamline workflows, reduce manual effort, and improve operational efficiency",
             img: "/images/ai2.png"
         },
         {
             title: "Computer Vision",
-            desc: "Image and video processing systems for detection and analysis.",
+            desc: "Advanced image and video processing systems for detection, recognition, and real-time analysis",
             img: "/images/ai3.png"
         },
         {
             title: "Robotics Integration",
-            desc: "Smart robotics systems for industrial and real-world applications.",
+            desc: "Smart robotics solutions integrated with software systems for real-world and industrial applications",
             img: "/images/ai4.png"
         },
         {
             title: "AI Chatbots & Assistants",
-            desc: "Conversational AI systems for customer support and engagement.",
+            desc: "Conversational AI systems designed for intelligent interaction, customer support, and automated engagement",
             img: "/images/ai5.png"
         },
+        {
+            title: "Natural Language Processing (NLP)",
+            desc: "Language models and text-processing systems for understanding, generating, and analyzing human language",
+            img: "/images/ai6.png"
+        },
+        {
+            title: "Predictive Analytics",
+            desc: "Insight-driven systems that analyze historical data to forecast trends and support decision-making",
+            img: "/images/ai7.png"
+        },
+        {
+            title: "AI Infrastructure & Deployment",
+            desc: "Scalable pipelines for training, deploying, and managing AI models in production environments",
+            img: "/images/ai8.png"
+        }
     ],
 
     sec_3_span1: "HOW WE",
@@ -1020,56 +1090,71 @@ const projectManagementContent = {
     sec_2_list: [
         {
             title: "Agile Project Management",
-            desc: "Flexible and iterative project execution for fast-moving environments.",
+            desc: "Iterative, adaptive project execution designed for fast-paced environments and continuous delivery",
             img: "/images/pm1.png"
         },
         {
             title: "Product Development Management",
-            desc: "End-to-end management from idea to final product delivery.",
+            desc: "End-to-end coordination from concept to deployment, ensuring alignment between vision, design, and engineering",
             img: "/images/pm2.png"
         },
         {
             title: "Team Coordination",
-            desc: "Efficient collaboration between teams, stakeholders, and developers.",
+            desc: "Structured collaboration across teams, stakeholders, and technical units to maintain alignment and efficiency",
             img: "/images/pm3.png"
         },
         {
             title: "Task & Workflow Management",
-            desc: "Structured task tracking and workflow optimization.",
+            desc: "Organized task systems and optimized workflows to maintain clarity, accountability, and execution speed",
             img: "/images/pm4.png"
         },
         {
             title: "Performance Tracking & Reporting",
-            desc: "Real-time insights into project progress and performance.",
+            desc: "Real-time visibility into progress, KPIs, and delivery metrics for informed decision-making",
             img: "/images/pm5.png"
         },
+        {
+            title: "Sprint Planning & Delivery",
+            desc: "Structured sprint cycles with clear deliverables, timelines, and measurable outcomes",
+            img: "/images/pm6.png"
+        },
+        {
+            title: "Risk & Issue Management",
+            desc: "Proactive identification and resolution of risks to maintain project stability and continuity",
+            img: "/images/pm7.png"
+        },
+        {
+            title: "Process Optimization",
+            desc: "Continuous refinement of workflows and systems to improve efficiency, speed, and project outcomes",
+            img: "/images/pm8.png"
+        }
     ],
 
     sec_3_span1: "OUR",
     sec_3_span2: "PROJECT",
     sec_3_span3: "WORKFLOW",
-    sec_3_desc: "Organized. Transparent. Result-driven.",
+    sec_3_desc: "Structured execution. Clear visibility. Consistent delivery.",
     sec_3_list: [
         {
             title: "Planning & Strategy",
-            description: "We define scope, goals, and timelines clearly."
+            description: "We define objectives, scope, and timelines with clear technical and business alignment"
         },
         {
             title: "Task Breakdown",
-            description: "We divide the project into manageable tasks."
+            description: "We decompose the project into structured, actionable tasks with defined ownership"
         },
         {
             title: "Execution",
-            description: "We coordinate teams and ensure smooth progress."
+            description: "We coordinate teams and systems to ensure consistent, high-quality delivery"
         },
         {
             title: "Monitoring & Reporting",
-            description: "We track progress and communicate updates."
+            description: "We track performance, identify bottlenecks, and provide transparent progress updates"
         },
         {
             title: "Delivery & Evaluation",
-            description: "We deliver and analyze project success."
-        },
+            description: "We deliver, validate outcomes, and optimize for continuous improvement"
+        }
     ]
 }
 
@@ -1092,39 +1177,44 @@ const customSoftwareSolutionsContent = {
     sec_2_list: [
         {
             title: "Operational Software Systems",
-            desc: "Custom-built platforms that structure, automate, and optimize your internal business processes.",
+            desc: "Custom-built platforms that structure, automate, and optimize internal business operations at scale",
             img: "/images/software1.png"
         },
         {
             title: "Enterprise Dashboards & Control Panels",
-            desc: "Centralized interfaces that give you real-time visibility and control over critical operations.",
+            desc: "Centralized systems providing real-time visibility, control, and monitoring of critical business processes",
             img: "/images/software2.png"
         },
         {
             title: "Custom Web Platforms",
-            desc: "Robust, scalable web-based systems tailored to your product, users, and workflows.",
+            desc: "Scalable web-based systems engineered to support complex workflows, user interactions, and business logic",
             img: "/images/software3.png"
         },
         {
             title: "Client & Partner Portals",
-            desc: "Secure, user-focused portals designed to enhance collaboration, access, and communication.",
+            desc: "Secure, user-centric portals designed to streamline collaboration, communication, and controlled access",
             img: "/images/software4.png"
         },
         {
             title: "Workflow Automation Systems",
-            desc: "Intelligent systems that eliminate repetitive tasks and increase operational efficiency.",
+            desc: "Intelligent automation systems that eliminate repetitive processes and improve operational efficiency",
             img: "/images/software5.png"
         },
         {
             title: "Analytics & Reporting Platforms",
-            desc: "Data-driven systems that transform raw information into actionable insights.",
+            desc: "Data-driven platforms that transform operational data into actionable insights and performance metrics",
             img: "/images/software6.png"
         },
         {
             title: "Legacy System Transformation",
-            desc: "Modernizing outdated systems into scalable, high-performance digital infrastructure.",
+            desc: "Modernization of outdated systems into scalable, high-performance, and maintainable digital infrastructure",
             img: "/images/software7.png"
         },
+        {
+            title: "System Integration & APIs",
+            desc: "Seamless integration of multiple systems through secure APIs, ensuring unified data flow and interoperability",
+            img: "/images/software8.png"
+        }
     ],
 
     sec_3_span1: "OUR APPROACH",
@@ -1174,39 +1264,44 @@ const ecommercePlatformsContent = {
     sec_2_list: [
         {
             title: "Custom Commerce Platforms",
-            desc: "Fully tailored online stores designed around your products, audience, and growth strategy.",
+            desc: "Fully tailored e-commerce systems built around your products, users, and long-term growth strategy",
             img: "/images/ecom1.png"
         },
         {
             title: "Conversion-Focused Checkout Systems",
-            desc: "Streamlined checkout experiences designed to reduce friction and maximize sales.",
+            desc: "Optimized checkout flows engineered to reduce friction, improve completion rates, and maximize revenue",
             img: "/images/ecom2.png"
         },
         {
             title: "Secure Payment Integrations",
-            desc: "Reliable payment systems built for trust, security, and global transactions.",
+            desc: "Reliable, secure payment infrastructures supporting global transactions and multiple payment channels",
             img: "/images/ecom3.png"
         },
         {
             title: "Inventory & Fulfillment Systems",
-            desc: "Backend systems that simplify inventory tracking, orders, and logistics management.",
+            desc: "Integrated backend systems for real-time inventory tracking, order management, and logistics coordination",
             img: "/images/ecom4.png"
         },
         {
             title: "Multi-Vendor Marketplaces",
-            desc: "Scalable platforms supporting vendors, listings, transactions, and commission systems.",
+            desc: "Scalable marketplace platforms supporting vendors, product listings, transactions, and commission management",
             img: "/images/ecom5.png"
         },
         {
             title: "Mobile Commerce Optimization",
-            desc: "Responsive and mobile-first experiences designed for modern shopping behavior.",
+            desc: "Mobile-first shopping experiences optimized for speed, usability, and high conversion across devices",
             img: "/images/ecom6.png"
         },
         {
             title: "Performance & Growth Optimization",
-            desc: "Continuous improvements focused on speed, UX, and revenue performance.",
+            desc: "Continuous optimization focused on speed, user experience, and measurable revenue growth",
             img: "/images/ecom7.png"
         },
+        {
+            title: "Customer Data & Personalization Systems",
+            desc: "Intelligent systems that leverage user data to deliver personalized shopping experiences and targeted engagement",
+            img: "/images/ecom8.png"
+        }
     ],
 
     sec_3_span1: "HOW WE",
@@ -1256,34 +1351,44 @@ const aiPoweredAutomationContent = {
     sec_2_list: [
         {
             title: "Intelligent Workflow Automation",
-            desc: "AI-driven systems that automate repetitive tasks and streamline operations.",
+            desc: "AI-driven systems that automate repetitive processes, optimize workflows, and improve operational efficiency at scale",
             img: "/images/ai_auto1.png"
         },
         {
             title: "Conversational AI Systems",
-            desc: "Smart assistants and chatbots designed for customer interaction and support.",
+            desc: "Advanced chatbots and virtual assistants designed for natural interaction, customer support, and automated engagement",
             img: "/images/ai_auto2.png"
         },
         {
             title: "Predictive Analytics Systems",
-            desc: "AI models that provide forecasts, recommendations, and insights for decision-making.",
+            desc: "Machine learning models that deliver forecasts, recommendations, and data-driven insights for strategic decisions",
             img: "/images/ai_auto3.png"
         },
         {
             title: "Data Processing Automation",
-            desc: "Systems that intelligently process and manage large-scale business data.",
+            desc: "Automated pipelines for processing, structuring, and managing large-scale data with speed and accuracy",
             img: "/images/ai_auto4.png"
         },
         {
             title: "Customer Experience Automation",
-            desc: "Automation solutions that improve personalization, response time, and engagement.",
+            desc: "AI-powered systems that personalize interactions, improve response times, and enhance user engagement",
             img: "/images/ai_auto5.png"
         },
         {
             title: "Operational Monitoring Systems",
-            desc: "Real-time tracking systems that detect anomalies and trigger automated responses.",
+            desc: "Real-time monitoring solutions that detect anomalies, trigger alerts, and enable automated responses",
             img: "/images/ai_auto6.png"
         },
+        {
+            title: "AI Decision Systems",
+            desc: "Intelligent decision engines that automate business logic, approvals, and dynamic rule-based actions",
+            img: "/images/ai_auto7.png"
+        },
+        {
+            title: "AI Integration & Deployment",
+            desc: "Seamless integration of AI models into existing systems with scalable deployment and lifecycle management",
+            img: "/images/ai_auto8.png"
+        }
     ],
 
     sec_3_span1: "OUR APPROACH",
@@ -1333,34 +1438,44 @@ const enterpriseSystemIntegrationContent = {
     sec_2_list: [
         {
             title: "API & Platform Integration",
-            desc: "Seamless connections between applications, services, and business systems.",
+            desc: "Seamless integration of applications, services, and business systems through secure and scalable APIs",
             img: "/images/enterprise1.png"
         },
         {
             title: "ERP & CRM Synchronization",
-            desc: "Unified systems that align operations, sales, and customer data.",
+            desc: "Unified data environments aligning operations, sales, and customer systems for consistent workflows",
             img: "/images/enterprise2.png"
         },
         {
             title: "Cloud & Infrastructure Integration",
-            desc: "Connecting cloud services with internal systems for flexibility and scalability.",
+            desc: "Connecting cloud platforms with internal systems to enable flexibility, scalability, and high availability",
             img: "/images/enterprise3.png"
         },
         {
             title: "Data Synchronization Systems",
-            desc: "Real-time data flow across platforms to ensure consistency and accuracy.",
+            desc: "Real-time and event-driven data pipelines ensuring consistency and accuracy across platforms",
             img: "/images/enterprise4.png"
         },
         {
             title: "Legacy System Integration",
-            desc: "Bridging older systems with modern platforms without disrupting operations.",
+            desc: "Bridging legacy infrastructure with modern systems while maintaining stability and operational continuity",
             img: "/images/enterprise5.png"
         },
         {
             title: "Middleware Architecture",
-            desc: "Custom integration layers that simplify complex system interactions.",
+            desc: "Custom integration layers that orchestrate communication between complex, distributed systems",
             img: "/images/enterprise6.png"
         },
+        {
+            title: "Event-Driven Integration Systems",
+            desc: "Scalable architectures using event streams and message queues for real-time system communication",
+            img: "/images/enterprise7.png"
+        },
+        {
+            title: "Integration Monitoring & Reliability",
+            desc: "End-to-end monitoring, logging, and fault handling to ensure stability and resilience across integrations",
+            img: "/images/enterprise8.png"
+        }
     ],
 
     sec_3_span1: "HOW WE",

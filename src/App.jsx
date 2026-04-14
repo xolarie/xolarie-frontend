@@ -7,9 +7,11 @@ import Home from "./Home";
 import Footer from "./components/Footer";
 import Services from "./pages/services";
 import Solutions from "./pages/solutions";
-import Resources from "./pages/resources";
+// import Resources from "./pages/insights";
 import Career from "./pages/career";
 import Aboutus from "./pages/aboutus"
+import { Lab } from "./pages/Lab";
+import { Products } from "./pages/Products";
 
 function App() {
 
@@ -22,8 +24,10 @@ function App() {
         <Route path="/about" element={<Aboutus />} />
         <Route path="/services/:serviceName" element={<Services />} />
         <Route path="/solutions/:solutionName" element={<Solutions />} />
-        <Route path="/resources/:resourceName" element={<Resources />} />
+        {/* <Route path="/resources/:resourceName" element={<Resources />} /> */}
         <Route path="/careers/:careerName" element={<Career />} />
+        <Route path="/lab" element={<Lab />} />
+        <Route path="/products" element={<Products />} />
       </Routes>
       <Footer />
     </Router>
