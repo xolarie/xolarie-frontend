@@ -1,22 +1,22 @@
 const labProjects = [
   {
     name: "Adaptive AI Agents",
-    status: "In Progress",
+    status: "Pending",
     desc: "Exploring autonomous agents capable of decision-making and task execution across dynamic environments.",
   },
   {
     name: "Decentralized Voting Systems",
-    status: "Prototype",
+    status: "Pending",
     desc: "Researching secure, transparent voting mechanisms leveraging blockchain and distributed systems.",
   },
   {
     name: "3D Web Interfaces",
-    status: "Experiment",
+    status: "Pending",
     desc: "Testing immersive web experiences using real-time 3D rendering and interactive environments.",
   },
   {
     name: "Smart Automation Pipelines",
-    status: "In Progress",
+    status: "Pending",
     desc: "Developing systems that adapt workflows dynamically based on data, behavior, and outcomes.",
   },
 ];
